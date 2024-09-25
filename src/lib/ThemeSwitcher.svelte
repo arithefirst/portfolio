@@ -1,24 +1,23 @@
-<script>
+<script lang="ts">
     import "../app.css";
-    let currentTheme = document.documentElement.getAttribute('data-theme');
-    let icon = "#sun"
+    let theme: string
+    function themesSet(input: string) {
+        document.documentElement.setAttribute('data-theme', input);
+        theme = input;
+    }
+
     function toggleTheme() {
-        if (currentTheme === 'light') {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            currentTheme = 'dark';
-            icon = '#sun';
+        if (theme === 'dark') {
+            themesSet('light');
         } else {
-            document.documentElement.setAttribute('data-theme', 'light');
-            currentTheme = 'light';
-            icon = '#moon'
+            themesSet('dark');
         }
     }
 
-    // Make sure the right icons are set on page load
-    toggleTheme()
+    themesSet('light');
 </script>
 
-<symbol id="moon" viewBox="0 0 24 24">
+<symbol id="light" viewBox="0 0 24 24">
     <g fill="none" stroke="black" stroke-dasharray="4" stroke-dashoffset="4" stroke-linecap="round" stroke-linejoin="round">
         <path d="M13 4h1.5M13 4h-1.5M13 4v1.5M13 4v-1.5">
             <animate id="lineMdMoonFilledAltLoop0" fill="freeze" attributeName="stroke-dashoffset" begin="0.7s;lineMdMoonFilledAltLoop0.begin+6s" dur="0.4s" values="4;0" />
@@ -49,7 +48,7 @@
         <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="56;0" />
     </path>
 </symbol>
-<symbol id="sun" viewBox="0 0 24 24">
+<symbol id="dark" viewBox="0 0 24 24">
     <g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <path fill="white" fill-opacity="0" stroke-dasharray="36" stroke-dashoffset="36" d="M12 7c2.76 0 5 2.24 5 5c0 2.76 -2.24 5 -5 5c-2.76 0 -5 -2.24 -5 -5c0 -2.76 2.24 -5 5 -5">
             <animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.5s" values="0;1" />
@@ -73,5 +72,5 @@
 <button
     class="btn base-content m-5"
     on:click={toggleTheme}>
-    <svg xmlns="http://www.w3.org/2000/svg" height="80%" width="80%" viewBox="0 0 16 16"><use href={icon}/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" height="80%" width="80%" viewBox="0 0 16 16"><use href="#{theme}"/></svg>
 </button>

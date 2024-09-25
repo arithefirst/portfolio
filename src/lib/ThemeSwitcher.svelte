@@ -1,20 +1,23 @@
 <script lang="ts">
     import "../app.css";
     let theme: string
-    function themesSet(input: string) {
+    export let setFill: Function
+
+    function themeSet(input: string) {
         document.documentElement.setAttribute('data-theme', input);
         theme = input;
     }
 
     function toggleTheme() {
         if (theme === 'dark') {
-            themesSet('light');
+            themeSet('light');
         } else {
-            themesSet('dark');
+            themeSet('dark');
         }
+        setFill();
     }
 
-    themesSet('light');
+    themeSet('light');
 </script>
 
 <symbol id="light" viewBox="0 0 24 24">

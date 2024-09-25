@@ -18,7 +18,7 @@
 </script>
 
 <symbol id="light" viewBox="0 0 24 24">
-    <g fill="none" stroke="black" stroke-dasharray="4" stroke-dashoffset="4" stroke-linecap="round" stroke-linejoin="round">
+    <g fill="none" stroke="#1f2937" stroke-dasharray="4" stroke-dashoffset="4" stroke-linecap="round" stroke-linejoin="round">
         <path d="M13 4h1.5M13 4h-1.5M13 4v1.5M13 4v-1.5">
             <animate id="lineMdMoonFilledAltLoop0" fill="freeze" attributeName="stroke-dashoffset" begin="0.7s;lineMdMoonFilledAltLoop0.begin+6s" dur="0.4s" values="4;0" />
             <animate fill="freeze" attributeName="stroke-dashoffset" begin="lineMdMoonFilledAltLoop0.begin+2s;lineMdMoonFilledAltLoop0.begin+4s" dur="0.4s" values="4;0" />
@@ -43,14 +43,14 @@
             <set fill="freeze" attributeName="d" begin="lineMdMoonFilledAltLoop2.begin+5.8s" to="M19 4h1.5M19 4h-1.5M19 4v1.5M19 4v-1.5" />
         </path>
     </g>
-    <path fill="black" fill-opacity="0" stroke="black" stroke-dasharray="56" stroke-dashoffset="56" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z">
+    <path fill="#1f2937" fill-opacity="0" stroke="#1f2937" stroke-dasharray="56" stroke-dashoffset="56" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z">
         <animate fill="freeze" attributeName="fill-opacity" begin="1.5s" dur="0.5s" values="0;1" />
         <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.6s" values="56;0" />
     </path>
 </symbol>
 <symbol id="dark" viewBox="0 0 24 24">
-    <g fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-        <path fill="white" fill-opacity="0" stroke-dasharray="36" stroke-dashoffset="36" d="M12 7c2.76 0 5 2.24 5 5c0 2.76 -2.24 5 -5 5c-2.76 0 -5 -2.24 -5 -5c0 -2.76 2.24 -5 5 -5">
+    <g fill="none" stroke="#a6adbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <path fill="#a6adbb" fill-opacity="0" stroke-dasharray="36" stroke-dashoffset="36" d="M12 7c2.76 0 5 2.24 5 5c0 2.76 -2.24 5 -5 5c-2.76 0 -5 -2.24 -5 -5c0 -2.76 2.24 -5 5 -5">
             <animate fill="freeze" attributeName="fill-opacity" begin="1s" dur="0.5s" values="0;1" />
             <animate fill="freeze" attributeName="stroke-dashoffset" dur="0.5s" values="36;0" />
         </path>
@@ -70,7 +70,7 @@
 </symbol>
 
 <button
-    class="btn base-content m-5"
+    class="btn bg-base-300 m-5"
     on:click={toggleTheme}>
     <svg xmlns="http://www.w3.org/2000/svg" height="80%" width="80%" viewBox="0 0 16 16"><use href="#{theme}"/></svg>
 </button>

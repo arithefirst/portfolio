@@ -4,83 +4,97 @@
     export let itemsRowOne: {[key: string]: string}
     export let itemsRowTwo: {[key: string]: string}
 
-    let lnmove: number;
-    let fwmove: number;
-    let tlmove: number;
-    let omove: number;
 
-    function setOffset(l: number,f: number,t: number, o: number) {
-        lnmove = l;
-        fwmove = f;
-        tlmove = t;
-        omove = o;
+    let mode: number;
+    function setOffset(m: number) {
+        mode = m
     }
+
 </script>
 
 <div id="techstack">
     <div class="w-fit mx-auto my-2">
         <button
             class="btn btn-sm btn-primary mx-1"
-            on:mouseenter={() => {setOffset(0,30,0,0)}}
-            on:mouseleave={() => {setOffset(0,0,0,0)}}
-        >Frameworks & Libs</button>
-
-        <button
-            class="btn btn-sm btn-primary mx-1"
-            on:mouseenter={() => {setOffset(0,0,30,0)}}
-            on:mouseleave={() => {setOffset(0,0,0,0)}}
+            on:mouseenter={() => {setOffset(1)}}
+            on:mouseleave={() => {setOffset(0)}}
         >Tools</button>
 
         <button
             class="btn btn-sm btn-primary mx-1"
-            on:mouseenter={() => {setOffset(30,0,0,0)}}
-            on:mouseleave={() => {setOffset(0,0,0,0)}}
+            on:mouseenter={() => {setOffset(2)}}
+            on:mouseleave={() => {setOffset(0)}}
+        >Frameworks & Libs</button>
+
+        <button
+            class="btn btn-sm btn-primary mx-1"
+            on:mouseenter={() => {setOffset(3)}}
+            on:mouseleave={() => {setOffset(0)}}
         >Languages</button>
 
         <button
                 class="btn btn-sm btn-primary mx-1"
-                on:mouseenter={() => {setOffset(0,0,0,30)}}
-                on:mouseleave={() => {setOffset(0,0,0,0)}}
+                on:mouseenter={() => {setOffset(4)}}
+                on:mouseleave={() => {setOffset(0)}}
         >Other</button>
     </div>
-    <div class="w-fit h-16 mx-auto relative img-container" style='--lnmove:{lnmove + "px"}; --fwmove:{fwmove + "px"};--tlmove:{tlmove + "px"};--omove:{omove + "px"}'>
+
+    <div class="w-fit h-16 mx-auto relative img-container">
         {#each Object.entries(itemsRowOne) as [item, type]}
             <img
                 alt={item.charAt(0).toUpperCase() + item.slice(1)}
                 src={"https://skillicons.dev/icons?i=" + item}
-                class="w-16 h-16 inline-block mx-1 {'type-' + type}"
+                class="border-2 rounded-[18px] w-16 h-16 inline-block mx-1 {'type-' + type}"
             >
         {/each}
     </div>
-    <div class="w-fit h-16 mx-auto relative img-container" style='--lnmove:{lnmove + "px"}; --fwmove:{fwmove + "px"};--tlmove:{tlmove + "px"};--omove:{omove + "px"}'>
+    <div class="w-fit h-16 mx-auto relative img-container">
         {#each Object.entries(itemsRowTwo) as [item, type]}
             <img
                     alt={item.charAt(0).toUpperCase() + item.slice(1)}
                     src={"https://skillicons.dev/icons?i=" + item}
-                    class="w-16 h-16 inline-block m-1 {'type-' + type}"
+                    class="border-2 rounded-[18px] w-16 h-16 inline-block m-1 {'type-' + type}"
             >
         {/each}
     </div>
 </div>
 
 <style>
-    .type-tool {
-        transform: translate(0, var(--tlmove));
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
-    .type-lang {
-        transform: translate(0, var(--lnmove));
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
-    .type-framework {
-        transform: translate(0, var(--fwmove));
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
-    .type-other {
-        transform: translate(0, var(--omove));
+    .type-tool, .type-framework, .type-lang, .type-other {
+        border-color: oklch(var(--b3));
         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 </style>
+
+{#if mode === 1}
+    <style>
+        .type-tool {
+            border-color: oklch(var(--p)) !important;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    </style>
+{/if}
+{#if mode === 2}
+    <style>
+        .type-framework {
+            border-color: oklch(var(--p)) !important;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    </style>
+{/if}
+{#if mode === 3}
+    <style>
+        .type-lang {
+            border-color: oklch(var(--p)) !important;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    </style>
+{/if}
+{#if mode === 4}
+    <style>
+        .type-other {
+            border-color: oklch(var(--p)) !important;
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+    </style>
+{/if}

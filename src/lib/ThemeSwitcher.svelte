@@ -17,7 +17,7 @@
         setFill();
     }
 
-    themeSet('light');
+    themeSet('dark');
 </script>
 
 <symbol id="light" viewBox="0 0 24 24">

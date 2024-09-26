@@ -38,7 +38,7 @@
         >Other</button>
     </div>
 
-    <div class="w-11/12 md:w-1/2 h-16 mx-auto relative img-container flex flex-wrap justify-center">
+    <div class="w-11/12 md:w-1/2 h-fit mx-auto relative img-container flex flex-wrap justify-center">
         {#each Object.entries(items) as [item, type]}
             <img
                 alt={item.charAt(0).toUpperCase() + item.slice(1)}

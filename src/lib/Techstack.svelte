@@ -1,11 +1,8 @@
 <script lang="ts">
     // See codepen.io/April-Hall/pen/ZEgEGEg
     // for my original concept for this
-    export let items: {[key: string]: string}
-
-    const tools = document.querySelector("#tl-btn")
-    const langs = document.getElementById("ln-btn");
-    const fws = document.getElementById("fw-btn");
+    export let itemsRowOne: {[key: string]: string}
+    export let itemsRowTwo: {[key: string]: string}
 
     let lnmove: number;
     let fwmove: number;
@@ -47,11 +44,20 @@
         >Other</button>
     </div>
     <div class="w-fit h-16 mx-auto relative img-container" style='--lnmove:{lnmove + "px"}; --fwmove:{fwmove + "px"};--tlmove:{tlmove + "px"};--omove:{omove + "px"}'>
-        {#each Object.entries(items) as [item, type]}
+        {#each Object.entries(itemsRowOne) as [item, type]}
             <img
                 alt={item.charAt(0).toUpperCase() + item.slice(1)}
                 src={"https://skillicons.dev/icons?i=" + item}
                 class="w-16 h-16 inline-block mx-1 {'type-' + type}"
+            >
+        {/each}
+    </div>
+    <div class="w-fit h-16 mx-auto relative img-container" style='--lnmove:{lnmove + "px"}; --fwmove:{fwmove + "px"};--tlmove:{tlmove + "px"};--omove:{omove + "px"}'>
+        {#each Object.entries(itemsRowTwo) as [item, type]}
+            <img
+                    alt={item.charAt(0).toUpperCase() + item.slice(1)}
+                    src={"https://skillicons.dev/icons?i=" + item}
+                    class="w-16 h-16 inline-block m-1 {'type-' + type}"
             >
         {/each}
     </div>

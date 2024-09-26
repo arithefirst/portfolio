@@ -12,6 +12,9 @@
 
 </script>
 
+<h1 class="text-3xl font-bold text-center">Technologies</h1>
+<hr class="w-1/2 mx-auto my-3 border-base-content">
+
 <div id="techstack">
     <div class="w-fit mx-auto my-2">
         <button
@@ -51,9 +54,9 @@
     <div class="w-fit h-16 mx-auto relative img-container">
         {#each Object.entries(itemsRowTwo) as [item, type]}
             <img
-                    alt={item.charAt(0).toUpperCase() + item.slice(1)}
-                    src={"https://skillicons.dev/icons?i=" + item}
-                    class="border-2 rounded-[18px] w-16 h-16 inline-block m-1 {'type-' + type}"
+                alt={item.charAt(0).toUpperCase() + item.slice(1)}
+                src={"https://skillicons.dev/icons?i=" + item}
+                class="border-2 rounded-[18px] w-16 h-16 inline-block m-1 {'type-' + type}"
             >
         {/each}
     </div>

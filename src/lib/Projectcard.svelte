@@ -20,6 +20,12 @@
     let componentTop: number
     let componentLeft: number
 
+    function openTab() {
+        if (href != "#") {
+            window.open(href, '_blank');
+        }
+    }
+
     document.addEventListener("mousemove", (e) => {
         rotateElement(e);
     });
@@ -51,8 +57,7 @@
 
 <div class="card bg-base-200 cursor-pointer relative grid w-11/12 md:w-64 my-3
      md:hover:scale-[1.025] md:linear md:transition-all"
-     on:click={() => {window.location.replace(href);}}
-     on:keypress={() => {window.location.replace(href);}}
+     on:click={openTab} on:keypress={openTab}
      role="button" tabindex={index} bind:this={component}
      bind:clientWidth={cardW} bind:clientHeight={cardH}
      style="--rotateX: {rotateX}; --rotateY: {rotateY};"

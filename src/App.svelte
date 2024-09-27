@@ -29,48 +29,24 @@
             href="https://github.com/arithefirst/now-playing-widget"
             name="Now Playing Widget"
             src="/now-playing-widget.png"
-            alt="Card"
-            desc="A simple widget to show the current song playing on your spotify account. Useful for twitch streams and youtube videos. "
-            tags={["Golang", "Javascript", "HTML", "CSS"]} index={1}
+            alt="now playing widget preview"
+            desc="A simple widget to show the current song playing on your spotify account. Useful for twitch streams and youtube videos"
+            tags={["Golang", "Javascript", "HTML5", "CSS3"]} index={1}
+    />
+    <Projectcard
+            href="https://github.com/arithefirst/valo-builder"
+            name="Valo Builder"
+            src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
+            alt="valo builder logo"
+            desc="A website for building VALORANT skin collections without sending all of your money to Riot Games"
+            tags={["Golang", "Svelte", "CSS3"]} index={2}
     />
     <Projectcard
             href="#"
-            name="Card"
+            name="Portfolio"
             src="https://arithefirst.com/images/pfp.png"
-            alt="Card"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]} index={2}
-    />
-    <Projectcard
-            href="#"
-            name="Card"
-            src="https://arithefirst.com/images/pfp.png"
-            alt="Card"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]} index={3}
-    />
-    <Projectcard
-            href="#"
-            name="Card"
-            src="https://arithefirst.com/images/pfp.png"
-            alt="Card"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]} index={4}
-    />
-    <Projectcard
-            href="#"
-            name="Card"
-            src="https://arithefirst.com/images/pfp.png"
-            alt="Card"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]} index={5}
-    />
-    <Projectcard
-            href="#"
-            name="Card"
-            src="https://arithefirst.com/images/pfp.png"
-            alt="Card"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]} index={6}
+            alt="cat from 2023 steam summer sale"
+            desc="My portfolio website, the one you're on now!"
+            tags={["DaisyUI", "Svelte", "Tailwind"]} index={3}
     />
 </div>

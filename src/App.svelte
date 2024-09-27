@@ -31,7 +31,7 @@
             src="https://arithefirst.com/images/pfp.png"
             alt="Card"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]}
+            tags={["tag1", "tag2"]} index={1}
     />
     <Projectcard
             href="#"
@@ -39,7 +39,7 @@
             src="https://arithefirst.com/images/pfp.png"
             alt="Card"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]}
+            tags={["tag1", "tag2"]} index={2}
     />
     <Projectcard
             href="#"
@@ -47,7 +47,7 @@
             src="https://arithefirst.com/images/pfp.png"
             alt="Card"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]}
+            tags={["tag1", "tag2"]} index={3}
     />
     <Projectcard
             href="#"
@@ -55,7 +55,7 @@
             src="https://arithefirst.com/images/pfp.png"
             alt="Card"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]}
+            tags={["tag1", "tag2"]} index={4}
     />
     <Projectcard
             href="#"
@@ -63,7 +63,7 @@
             src="https://arithefirst.com/images/pfp.png"
             alt="Card"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]}
+            tags={["tag1", "tag2"]} index={5}
     />
     <Projectcard
             href="#"
@@ -71,6 +71,6 @@
             src="https://arithefirst.com/images/pfp.png"
             alt="Card"
             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]}
+            tags={["tag1", "tag2"]} index={6}
     />
 </div>

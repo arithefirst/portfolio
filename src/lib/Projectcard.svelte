@@ -1,7 +1,5 @@
 <script lang="ts">
-
     import { onMount} from "svelte";
-
     export let name: string
     export let src: string
     export let alt: string
@@ -9,8 +7,6 @@
     export let desc: string
     export let tags: string[]
     export let index: number
-
-
 
     let rotateX: string
     let rotateY: string
@@ -20,12 +16,14 @@
     let componentTop: number
     let componentLeft: number
 
+    // Open tab in new window if href is not to the same page
     function openTab() {
         if (href != "#") {
             window.open(href, '_blank');
         }
     }
 
+    // Every mousemove run rotateElement(e)
     document.addEventListener("mousemove", (e) => {
         rotateElement(e);
     });

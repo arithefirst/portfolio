@@ -2,6 +2,7 @@
 import daisyui from "daisyui"
 
 export default {
+  darkMode: ['selector', '[data-theme="dark"]'],
   content: ['./src/**/*.{svelte,js,ts}'],
   plugins: [daisyui],
   daisyui: {

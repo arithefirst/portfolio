@@ -7,7 +7,7 @@
     export let tags: string[]
 </script>
 
-<div class="card bg-base-100 shadow-xl cursor-pointer mx-4 relative md:w-64 w-48 my-3">
+<div class="card bg-base-100 shadow-xl cursor-pointer mx-4 relative grid md:w-64 my-3">
     <figure>
         <img {src} {alt} class="w-full"/>
     </figure>

@@ -21,6 +21,56 @@
 
 <Techstack {items} />
 
-<div class="md:grid-cols-4 grid-cols-2 flex flex-wrap w-fit mx-auto">
+<h1 class="text-3xl font-bold text-center md:mt-5 mt-5">Projects</h1>
+<hr class="w-1/2 mx-auto my-3 border-base-content">
+<div class="md:grid-cols-4 grid-cols-1 grid w-fit mx-auto">
     <!--  Add <Projectcard /> Components here  -->
+    <Projectcard
+            href="#"
+            name="Card"
+            src="https://arithefirst.com/images/pfp.png"
+            alt="Card"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            tags={["tag1", "tag2"]}
+    />
+    <Projectcard
+            href="#"
+            name="Card"
+            src="https://arithefirst.com/images/pfp.png"
+            alt="Card"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            tags={["tag1", "tag2"]}
+    />
+    <Projectcard
+            href="#"
+            name="Card"
+            src="https://arithefirst.com/images/pfp.png"
+            alt="Card"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            tags={["tag1", "tag2"]}
+    />
+    <Projectcard
+            href="#"
+            name="Card"
+            src="https://arithefirst.com/images/pfp.png"
+            alt="Card"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            tags={["tag1", "tag2"]}
+    />
+    <Projectcard
+            href="#"
+            name="Card"
+            src="https://arithefirst.com/images/pfp.png"
+            alt="Card"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            tags={["tag1", "tag2"]}
+    />
+    <Projectcard
+            href="#"
+            name="Card"
+            src="https://arithefirst.com/images/pfp.png"
+            alt="Card"
+            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            tags={["tag1", "tag2"]}
+    />
 </div>

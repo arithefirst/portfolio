@@ -77,10 +77,13 @@
 </div>
 
 <style>
-    .card:hover {
-        transform:
-            perspective(5000px)
-            rotateY(var(--rotateY))
-            rotateX(var(--rotateX))
+   /* Disable perspective follow on mobile */
+    @media (min-width: 768px) {
+        .card:hover {
+            transform:
+                    perspective(5000px)
+                    rotateY(var(--rotateY))
+                    rotateX(var(--rotateX))
+        }
     }
 </style>

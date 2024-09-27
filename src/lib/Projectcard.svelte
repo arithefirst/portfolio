@@ -40,11 +40,11 @@
         const y = event.clientY - componentTop;
 
         // Find the offset and tone it down
-        const offsetX = ((x - (cardW / 2)) / (cardW / 2)) * 25;
+        const offsetX = ((x - (cardW / 2)) / (cardW / 2)) * 20;
 
         // Use a lower offset here bc there is always more
         // vertical space than horizontal space
-        const offsetY = ((y - (cardH / 2)) / (cardH / 2)) * -15;
+        const offsetY = ((y - (cardH / 2)) / (cardH / 2)) * -30;
 
         // set rotation
         rotateY = offsetX + "deg";

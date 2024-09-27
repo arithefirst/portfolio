@@ -23,7 +23,7 @@
 
 <h1 class="text-3xl font-bold text-center md:mt-5 mt-5">Projects</h1>
 <hr class="w-1/2 mx-auto my-3 border-base-content">
-<div class="md:grid-cols-4 grid-cols-1 grid w-fit mx-auto">
+<div class="md:grid-cols-4 grid-cols-1 w-fit mx-auto flex flex-wrap justify-center gap-4">
     <!--  Add <Projectcard /> Components here  -->
     <Projectcard
             href="https://github.com/arithefirst/now-playing-widget"

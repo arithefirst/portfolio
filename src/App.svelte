@@ -46,7 +46,7 @@
                 src="https://arithefirst.com/images/pfp.png"
                 alt="cat from 2023 steam summer sale"
                 desc="My portfolio website, the one you're on now!"
-                tags={["DaisyUI", "Svelte", "Tailwind"]} index={3}
+                tags={["DaisyUI", "Svelte", "Tailwind", "Typescript"]} index={3}
         />
     </div>
 </div>

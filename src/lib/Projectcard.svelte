@@ -8,14 +8,15 @@
     export let index: number
 </script>
 
-<div class="card bg-base-100 shadow-xl cursor-pointer mx-4 relative grid md:w-64 my-3"
+<div class="card bg-base-100 shadow-xl cursor-pointer mx-4 relative grid md:w-64 my-3
+     md:hover:scale-[1.025] md:linear md:transition-all"
      on:click={() => {window.location.replace(href);}}
      on:keypress={() => {window.location.replace(href);}}
      role="button"
      tabindex={index}
 >
     <figure>
-        <img {src} {alt} class="w-full"/>
+        <img {src} {alt} class="w-full h-full bg-base-200"/>
     </figure>
     <div class="card-body">
         <h2 class="card-title">{name}</h2>

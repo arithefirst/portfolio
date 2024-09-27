@@ -26,12 +26,12 @@
 <div class="md:grid-cols-4 grid-cols-1 grid w-fit mx-auto">
     <!--  Add <Projectcard /> Components here  -->
     <Projectcard
-            href="#"
-            name="Card"
-            src="https://arithefirst.com/images/pfp.png"
+            href="https://github.com/arithefirst/now-playing-widget"
+            name="Now Playing Widget"
+            src="/now-playing-widget.png"
             alt="Card"
-            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            tags={["tag1", "tag2"]} index={1}
+            desc="A simple widget to show the current song playing on your spotify account. Useful for twitch streams and youtube videos. "
+            tags={["Golang", "Javascript", "HTML", "CSS"]} index={1}
     />
     <Projectcard
             href="#"

@@ -1,5 +1,6 @@
 <script lang="ts">
     import "./app.css";
+    import Hero from "./lib/Hero.svelte"
     import Navbar from "./lib/Navbar.svelte";
     import Techstack from "./lib/Techstack.svelte";
     import Projectcard from "./lib/Projectcard.svelte";
@@ -16,9 +17,9 @@
     }
 
 </script>
-
 <Navbar />
 
+<Hero />
 <div class="projects">
     <h1 class="text-3xl font-bold text-center md:mt-5 mt-5">Projects</h1>
     <hr class="w-1/2 mx-auto my-3 border-base-content">

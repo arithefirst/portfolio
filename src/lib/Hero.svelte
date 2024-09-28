@@ -1,4 +1,4 @@
-<div class="hero min-h-screen">
+<div id="hero" class="hero min-h-screen">
     <div class="hero-content text-center">
         <div class="my-auto">
             <h1 class="w-fit font-bold md:text-[225px] text-[20vw] text-neutral dark:text-white eight-bit mx-auto">HELLO!</h1>

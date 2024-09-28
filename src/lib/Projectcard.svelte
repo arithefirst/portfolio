@@ -10,11 +10,7 @@
 
     // Open tab in new window if href is not to the same page
     function openTab() {
-        if (href != "#hero") {
-            window.open(href, '_blank');
-        } else {
-            window.location.href = "#hero";
-        }
+        (href === "#hero") ? window.location.href = "#hero" : window.open(href, '_blank');
     }
 </script>
 

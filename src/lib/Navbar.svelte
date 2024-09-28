@@ -15,15 +15,15 @@
     setFill()
 </script>
 
-<div class="fixed md:mx-auto md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-70 rounded-b-2xl md:my-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]">
+<div class="fixed md:mx-auto md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl md:my-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]">
     <div class="navbar-start">
         <a href="/" class="btn btn-ghost text-xl">arithefirst</a>
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-            <li><a href="/">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
         </ul>
     </div>
     <div class="navbar-end">

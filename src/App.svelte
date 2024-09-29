@@ -4,18 +4,7 @@
     import Navbar from "./lib/Navbar.svelte";
     import Techstack from "./lib/Techstack.svelte";
     import Projectcard from "./lib/Projectcard.svelte";
-    const items = {
-        "arch":"other", "bash":"lang", "bootstrap":"framework",
-        "bun":"tool", "css":"lang", "discordjs":"framework",
-        "docker":"tool", "git":"tool", "github":"tool",
-        "go":"lang", "html":"lang", "javascript":"lang",
-        "jquery":"framework", "linux":"other", "mongodb":"other", "neovim":"tool",
-        "nodejs":"tool", "npm":"tool", "python":"lang",
-        "svelte":"framework", "tailwind":"framework", "threejs":"framework",
-        "typescript":"lang", "vim":"tool", "vercel":"tool",
-        "vite":"tool", "vscodium":"tool", "webstorm":"tool"
-    }
-
+    import { items } from './lib/techItems';
 </script>
 <Navbar />
 

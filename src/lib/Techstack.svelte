@@ -1,9 +1,9 @@
 <script lang="ts">
     // See codepen.io/April-Hall/pen/ZEgEGEg
     // for my original concept for this
-    export let items: {[key: string]: string}
-
-
+    import TechImg from "./TechImg.svelte";
+    interface item{ name: string; type: string; description: string;}
+    export let items: item[]
     let mode: number;
     function setOffset(m: number) {
         mode = m
@@ -39,22 +39,15 @@
     </div>
 
     <div class="w-11/12 md:w-1/2 h-fit mx-auto relative img-container flex flex-wrap justify-center">
-        {#each Object.entries(items) as [item, type]}
-            <img
-                alt={item.charAt(0).toUpperCase() + item.slice(1)}
-                src={"https://skillicons.dev/icons?i=" + item}
-                class="border-2 rounded-[18px] w-16 h-16 inline-block m-0.5 md:m-1 {'type-' + type}"
-            >
+        {#each items as item}
+            <TechImg
+                type={item.type}
+                name={item.name}
+                description={item.description}
+            />
         {/each}
     </div>
 </div>
-
-<style>
-    .type-tool, .type-framework, .type-lang, .type-other {
-        border-color: oklch(var(--b3));
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-</style>
 
 {#if mode === 1}
     <style>

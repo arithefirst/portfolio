@@ -17,7 +17,12 @@
         setFill();
     }
 
-    themeSet('dark');
+    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+    if (darkThemeMq.matches) {
+        themeSet('dark');
+    } else {
+        themeSet('light');
+    }
 </script>
 
 <symbol id="light" viewBox="0 0 16 16">

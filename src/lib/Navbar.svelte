@@ -21,9 +21,9 @@
     </div>
     <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
-            <li><a href="#hero">Home</a></li>
+            <li><a href="/#hero">Home</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="/#projects">Projects</a></li>
         </ul>
     </div>
     <div class="navbar-end">

@@ -19,7 +19,7 @@
     <div class="navbar-start">
         <a href="/" class="btn btn-ghost text-xl">arithefirst</a>
     </div>
-    <div class="navbar-center hidden lg:flex">
+    <div class="navbar-center hidden md:flex">
         <ul class="menu menu-horizontal px-1">
             <li><a href="/#hero">Home</a></li>
             <li><a href="/contact">Contact</a></li>

@@ -1,11 +1,11 @@
 <div id="hero" class="hero min-h-screen">
     <div class="hero-content text-center">
         <div class="my-auto">
-            <h1 class="w-fit font-bold lg:text-[225px] text-[20vw] text-neutral dark:text-white eight-bit mx-auto">HELLO!</h1>
+            <h1 class="w-fit font-bold lg:text-[14.0625em] text-[21vw] text-neutral dark:text-white mx-auto">HELLO!</h1>
             <p class="my-3 max-w-md dark:text-white mx-auto font-normal text-4xl">
                 I'm <strong class="font-black">April Hall</strong>
             </p>
-            <hr class="w-3/5 mx-auto border-2 border-neutral dark:border-white ">
+            <hr class="w-3/5 mx-auto border-2 border-neutral dark:border-white">
             <p class="my-3 max-w-md dark:text-white mx-auto font-medium text-4xl">
                 Fullstack Developer
             </p>
@@ -29,5 +29,9 @@
         background-size: 32px 32px;
         background-color: oklch(var(--a));
         animation: animateBackground 500s linear infinite;
+    }
+
+    h1 {
+        font-family: "Silkscreen", sans-serif;
     }
 </style>

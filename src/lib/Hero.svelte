@@ -1,7 +1,7 @@
 <div id="hero" class="hero min-h-screen">
     <div class="hero-content text-center">
         <div class="my-auto">
-            <h1 class="w-fit font-bold md:text-[225px] text-[20vw] text-neutral dark:text-white eight-bit mx-auto">HELLO!</h1>
+            <h1 class="w-fit font-bold lg:text-[225px] text-[20vw] text-neutral dark:text-white eight-bit mx-auto">HELLO!</h1>
             <p class="my-3 max-w-md dark:text-white mx-auto font-normal text-4xl">
                 I'm <strong class="font-black">April Hall</strong>
             </p>

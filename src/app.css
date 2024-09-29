@@ -3,8 +3,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.eight-bit {
-      font-family: "Silkscreen", sans-serif;
-      line-height: 225px;
-}

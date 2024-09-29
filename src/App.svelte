@@ -12,8 +12,8 @@
         "jquery":"framework", "linux":"other", "mongodb":"other", "neovim":"tool",
         "nodejs":"tool", "npm":"tool", "python":"lang",
         "svelte":"framework", "tailwind":"framework", "threejs":"framework",
-        "typescript":"lang", "vim":"tool", "vscodium":"tool",
-        "webstorm":"tool"
+        "typescript":"lang", "vim":"tool", "vercel":"tool",
+        "vite":"tool", "vscodium":"tool", "webstorm":"tool"
     }
 
 </script>

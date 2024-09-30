@@ -6,7 +6,6 @@
     export let href: string
     export let desc: string
     export let tags: string[]
-    export let index: number
 
     // Open tab in new window if href is not to the same page
     function openTab() {
@@ -17,7 +16,7 @@
 <div class="card bg-base-200 cursor-pointer relative grid w-11/12 md:w-64 my-3
      md:hover:scale-[1.025] md:linear md:transition-all"
      on:click={openTab} on:keypress={openTab}
-     role="button" tabindex={index}
+     role="button" tabindex={0}
 >
     <figure>
         <img {src} {alt} class="object-cover w-full h-full bg-base-300"/>

@@ -45,7 +45,9 @@
 </symbol>
 
 <button
-    class="btn btn-square btn-sm bg-base-300 w-10 h-10 m-1 justify-center hidden md:flex"
+    class="btn btn-square btn-sm bg-base-300
+    w-10 h-10 m-1 bg-opacity-55 border-opacity-55
+    justify-center hidden md:flex"
     on:click={toggleTheme}>
     <svg
         xmlns="http://www.w3.org/2000/svg"

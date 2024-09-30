@@ -17,10 +17,10 @@
 
 <div class="fixed md:mx-auto md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl md:my-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]">
     <div class="navbar-start">
-        <a href="/" class="btn btn-ghost text-xl">arithefirst</a>
+        <a href="/" class="btn btn-ghost dark:text-white text-xl">arithefirst</a>
     </div>
     <div class="navbar-center hidden md:flex">
-        <ul class="menu menu-horizontal px-1">
+        <ul class="menu menu-horizontal dark:text-white px-1">
             <li><a href="/#hero">Home</a></li>
             <li><a href="/contact">Contact</a></li>
             <li><a href="/#projects">Projects</a></li>

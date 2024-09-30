@@ -48,6 +48,7 @@
     class="btn btn-square btn-sm bg-base-300
     w-10 h-10 m-1 bg-opacity-55 border-opacity-55
     justify-center hidden md:flex"
+    aria-label="Switch Theme"
     on:click={toggleTheme}>
     <svg
         xmlns="http://www.w3.org/2000/svg"

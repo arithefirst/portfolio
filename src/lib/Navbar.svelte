@@ -29,7 +29,7 @@
     <div class="navbar-end">
         <details bind:open={open} class="dropdown dropdown-end">
             <summary class="btn btn-square btn-sm bg-base-300 w-10 h-10 m-1 swap swap-rotate relative md:hidden dropdown-end">
-                <input bind:checked={open} type="checkbox" />
+                <input bind:checked={open} type="checkbox" aria-label="Open nav menu" />
                 <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" class="swap-off m-auto" viewBox="0 0 24 24">
                     <g {fill} stroke={fill} stroke-dasharray="16" stroke-dashoffset="16" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                         <path d="M5 5h14" stroke-dashoffset="0" />

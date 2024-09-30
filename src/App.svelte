@@ -17,7 +17,7 @@
         <Projectcard
                 href="https://github.com/arithefirst/now-playing-widget"
                 name="Now Playing Widget"
-                src="/now-playing-widget.png"
+                src="/now-playing-widget.webp"
                 alt="now playing widget preview"
                 desc="A simple widget to show the current song playing on your spotify account. Useful for twitch streams and youtube videos"
                 tags={["Golang", "Javascript", "HTML5", "CSS3"]}
@@ -33,7 +33,7 @@
         <Projectcard
                 href="#hero"
                 name="Portfolio"
-                src="https://arithefirst.com/images/pfp.png"
+                src="/pfp.png"
                 alt="cat from 2023 steam summer sale"
                 desc="My portfolio website, the one you're on now!"
                 tags={["DaisyUI", "Svelte", "Tailwind", "Typescript"]}

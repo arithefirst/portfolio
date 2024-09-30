@@ -32,6 +32,7 @@
     }
 
     h1 {
+        font-family: Arial,sans-serif;
         font-family: "Silkscreen", sans-serif;
     }
 </style>

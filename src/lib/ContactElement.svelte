@@ -9,19 +9,16 @@
     }
 </script>
 
-<div
+<a
     class="h-8 md:w-48 w-full btn mx-1
     relative my-1 btn-primary
     text-primary-content
     border-transparent shadow-md"
-    on:click={openTab}
-    on:keypress={openTab}
-    tabindex={0}
-    role="button"
+    {href} target="_blank"
 >
     <Icon icon={icon} class="absolute right-5 text-xl"/>
     <p class="absolute text-l left-5">{name}</p>
-</div>
+</a>
 
 <style>
     .btn {

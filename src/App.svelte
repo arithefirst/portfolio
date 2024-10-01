@@ -31,7 +31,7 @@
                 tags={["Golang", "Svelte", "CSS3"]}
         />
         <Projectcard
-                href="#hero"
+                href="https://github.com/arithefirst/portfolio"
                 name="Portfolio"
                 src="/pfp.png"
                 alt="cat from 2023 steam summer sale"

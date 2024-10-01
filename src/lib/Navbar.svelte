@@ -15,7 +15,7 @@
     setFill()
 </script>
 
-<div class="fixed md:mx-auto md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl md:my-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]">
+<div class="fixed md:mx-auto md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]">
     <div class="navbar-start">
         <a href="/" class="btn btn-ghost dark:text-white text-xl">arithefirst</a>
     </div>

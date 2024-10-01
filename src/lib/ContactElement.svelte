@@ -12,7 +12,8 @@
 <a
     class="h-8 md:w-48 w-full btn mx-1
     relative my-1 btn-primary
-    text-primary-content
+    light:text-accent-content
+    dark:text-base-content
     border-transparent shadow-md"
     {href} target="_blank"
 >

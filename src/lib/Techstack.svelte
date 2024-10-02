@@ -2,8 +2,7 @@
     // See codepen.io/April-Hall/pen/ZEgEGEg
     // for my original concept for this
     import TechImg from "./TechImg.svelte";
-    interface item{ name: string; type: string; description: string;}
-    export let items: item[]
+    import { items } from "./techItems"
     let mode: number;
     function setOffset(m: number) {
         mode = m
@@ -44,6 +43,7 @@
                 type={item.type}
                 name={item.name}
                 description={item.description}
+                caps={item.caps}
             />
         {/each}
     </div>

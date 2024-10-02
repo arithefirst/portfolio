@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<Techstack {items} />
+<Techstack />
 <div class="h-8"/>
 
 <style>

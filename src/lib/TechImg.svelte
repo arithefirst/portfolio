@@ -3,13 +3,14 @@
     export let description: string;
     export let name: string;
     export let type: string;
+    export let caps: boolean;
     let hover: boolean = false;
 </script>
 
 <img
     on:mouseenter={() => {hover = true}}
     on:mouseleave={() => {hover = false}}
-    alt={name.charAt(0).toUpperCase() + name.slice(1)}
+    alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
     src={"https://skillicons.dev/icons?i=" + name}
     class="border-2 rounded-[18px] w-16 h-16 inline-block m-0.5 md:m-1 {'type-' + type}"
 >
@@ -23,12 +24,12 @@
         >
             <div class="px-3 py-2 bg-base-200 border-b border-base-300 rounded-t-lg">
                 <img
-                        alt={name.charAt(0).toUpperCase() + name.slice(1)}
+                        alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
                         src={"https://skillicons.dev/icons?i=" + name}
                         class="h-8 w-8 mx-auto"
                 >
                 <h3 class="font-semibold text-center dark:text-white">
-                    {name.charAt(0).toUpperCase() + name.slice(1)}
+                    {caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
                 </h3>
             </div>
             <div class="px-3 py-2">

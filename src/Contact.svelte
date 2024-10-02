@@ -8,7 +8,7 @@
 <div class="bg-accent w-full h-full fixed"/>
 <div class="container absolute left-1/2">
     <img alt="cat from 2023 steam summer sale" class="mx-auto md:w-1/6 aspect-square rounded-3xl" src="/pfp.png">
-    <h1 class="text-center font-bold md:text-3xl text-2xl my-2 dark:text-white light:text-accent-content">@arithefirst (almost) everywhere</h1>
+    <h1 class="text-center font-bold md:text-3xl text-xl my-2 dark:text-white light:text-accent-content">@arithefirst (almost) everywhere</h1>
     <div class="relative h-fit md:w-fit w-10/12 grid md:grid-cols-3 grid-cols-1 mx-auto justify-items-center">
         <ContactElement href="https://bsky.app/profile/arithefirst.com" icon="simple-icons:bluesky" name="Bluesky"/>
         <ContactElement href="https://www.discogs.com/user/arithefirst/collection?header=1" icon="simple-icons:discogs" name="Discogs"/>

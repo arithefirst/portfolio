@@ -3,10 +3,6 @@
     export let name: string;
     export let href: string;
     import Icon from '@iconify/svelte';
-
-    function openTab() {
-        window.open(href, '_blank');
-    }
 </script>
 
 <a

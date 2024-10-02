@@ -24,8 +24,15 @@
         }
     }
 
-    .hero {
-        background-image: linear-gradient(oklch(var(--p)) 2px, transparent 2px), linear-gradient(to right, oklch(var(--p)) 2px, transparent 2px);
+    :global(.light) {
+        background-image: linear-gradient(oklch(var(--a)) 2px, transparent 2px), linear-gradient(to right, oklch(var(--a)) 2px, transparent 2px);
+        background-size: 32px 32px;
+        background-color: oklch(var(--p));
+        animation: animateBackground 500s linear infinite;
+    }
+
+    :global(.dark) {
+        background-image: linear-gradient(oklch(var(--p)) 2px, transparent 2px), linear-gradient(to right, oklch(var(--p)) 2px, transparent 2px) !important;
         background-size: 32px 32px;
         background-color: oklch(var(--a));
         animation: animateBackground 500s linear infinite;

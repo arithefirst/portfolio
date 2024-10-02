@@ -1,11 +1,18 @@
 <script lang="ts">
+
+    import { onMount} from "svelte";
     import "../app.css";
     let theme: string
     export let setFill: Function
 
     function themeSet(input: string) {
-        document.documentElement.setAttribute('data-theme', input);
-        theme = input;
+       const hero =  window.document.getElementById("hero")!;
+       if (hero! !== null) {
+            hero!.classList.add(input);
+            input === "dark" ? hero.classList.remove("light") : hero.classList.remove("dark");
+        }
+       document.documentElement.setAttribute('data-theme', input);
+       theme = input;
     }
 
     function toggleTheme() {
@@ -17,12 +24,14 @@
         setFill();
     }
 
-    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
-    if (darkThemeMq.matches) {
-        themeSet('dark');
-    } else {
-        themeSet('light');
-    }
+    onMount(() => {
+        const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+        if (darkThemeMq.matches) {
+            themeSet('dark');
+        } else {
+            themeSet('light');
+        }
+    })
 </script>
 
 <symbol id="light" viewBox="0 0 16 16">

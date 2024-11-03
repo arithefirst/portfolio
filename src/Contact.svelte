@@ -1,6 +1,10 @@
 <script>
     import Navbar from "./lib/Navbar.svelte";
     import ContactElement from "./lib/ContactElement.svelte";
+
+    // Inject vercel speed insights
+    import { injectSpeedInsights } from '@vercel/speed-insights';
+    injectSpeedInsights();
 </script>
 
 <Navbar />

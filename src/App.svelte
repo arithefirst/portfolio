@@ -4,6 +4,10 @@
     import Navbar from "./lib/Navbar.svelte";
     import Techstack from "./lib/Techstack.svelte";
     import Projectcard from "./lib/Projectcard.svelte";
+
+    // Inject vercel speed insights
+    import { injectSpeedInsights } from '@vercel/speed-insights';
+    injectSpeedInsights();
 </script>
 <Navbar />
 

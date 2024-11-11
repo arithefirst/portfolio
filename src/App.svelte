@@ -47,7 +47,7 @@
     </div>
 </div>
 
-<div class="h-8"/>
+<div class="h-8"></div>
 
 <style>
     :root {

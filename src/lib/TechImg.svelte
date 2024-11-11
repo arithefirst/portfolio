@@ -1,15 +1,24 @@
 <script lang="ts">
     import { fade } from 'svelte/transition';
-    export let description: string;
-    export let name: string;
-    export let type: string;
-    export let caps: boolean;
-    let hover: boolean = false;
+    interface Props {
+        description: string;
+        name: string;
+        type: string;
+        caps: boolean;
+    }
+
+    let {
+        description,
+        name,
+        type,
+        caps
+    }: Props = $props();
+    let hover: boolean = $state(false);
 </script>
 
 <img
-    on:mouseenter={() => {hover = true}}
-    on:mouseleave={() => {hover = false}}
+    onmouseenter={() => {hover = true}}
+    onmouseleave={() => {hover = false}}
     alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
     src={"/skillicons/" + name + ".svg"}
     class="border-2 rounded-[18px] w-16 h-16 inline-block m-0.5 md:m-1 {'type-' + type}"

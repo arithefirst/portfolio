@@ -1,8 +1,8 @@
 <script lang="ts">
     import ThemeSwitcher from "./ThemeSwitcher.svelte";
 
-    let fill: string;
-    let open: boolean;
+    let fill: string = $state();
+    let open: boolean = $state();
 
     function setFill() {
         if (document.documentElement.getAttribute("data-theme") === "dark") {

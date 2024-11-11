@@ -3,7 +3,7 @@
     // for my original concept for this
     import TechImg from "./TechImg.svelte";
     import { items } from "./techItems"
-    let mode: number;
+    let mode: number = $state();
     function setOffset(m: number) {
         mode = m
     }
@@ -17,23 +17,23 @@
     <div class="w-fit mx-auto my-2">
         <button
             class="btn md:btn-sm btn-xs btn-primary mx-1"
-            on:mouseenter={() => {setOffset(1)}}
-            on:mouseleave={() => {setOffset(0)}}
+            onmouseenter={() => {setOffset(1)}}
+            onmouseleave={() => {setOffset(0)}}
         >Tools</button>
         <button
             class="btn md:btn-sm btn-xs btn-primary mx-1"
-            on:mouseenter={() => {setOffset(2)}}
-            on:mouseleave={() => {setOffset(0)}}
+            onmouseenter={() => {setOffset(2)}}
+            onmouseleave={() => {setOffset(0)}}
         >Frameworks & Libs</button>
         <button
             class="btn md:btn-sm btn-xs btn-primary mx-1"
-            on:mouseenter={() => {setOffset(3)}}
-            on:mouseleave={() => {setOffset(0)}}
+            onmouseenter={() => {setOffset(3)}}
+            onmouseleave={() => {setOffset(0)}}
         >Languages</button>
         <button
                 class="btn md:btn-sm btn-xs btn-primary mx-1"
-                on:mouseenter={() => {setOffset(4)}}
-                on:mouseleave={() => {setOffset(0)}}
+                onmouseenter={() => {setOffset(4)}}
+                onmouseleave={() => {setOffset(0)}}
         >Other</button>
     </div>
 

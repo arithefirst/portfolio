@@ -2,8 +2,12 @@
 
     import { onMount} from "svelte";
     import "../app.css";
-    let theme: string
-    export let setFill: Function
+    let theme: string = $state()
+    interface Props {
+        setFill: Function;
+    }
+
+    let { setFill }: Props = $props();
 
     function themeSet(input: string) {
        const hero =  window.document.getElementById("hero")!;
@@ -39,7 +43,7 @@
     w-10 h-10 m-1 bg-opacity-55 border-opacity-55
     justify-center hidden md:flex"
     aria-label="Switch Theme"
-    on:click={toggleTheme}>
+    onclick={toggleTheme}>
     <svg xmlns="http://www.w3.org/2000/svg"
          xmlns:xlink="http://www.w3.org/1999/xlink"
          height="80%" width="80%" viewBox="0 0 16 16"

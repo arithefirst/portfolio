@@ -70,9 +70,9 @@
         />
         <ContactElement
           className="col-span-2"
-          href="https://www.reddit.com/user/PancakeAri"
-          icon="simple-icons:reddit"
-          name="Reddit"
+          href="https://signal.me/#eu/NytIaD7wOcX0wBjv-rUs9T2jiOvF3691v0Ec1wa2CHNBvO5aeZ9BDoN6_uLod-TX"
+          icon="simple-icons:signal"
+          name="Signal"
         />
         <ContactElement
           className="col-span-2"

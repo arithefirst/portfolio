@@ -8,6 +8,7 @@
 
 <svelte:head>
   <title>Contact</title>
+  <meta name="description" content="Everywhere you can find April Hall" />
 </svelte:head>
 
 <div class="w-screen z-10 mt-[76px] md:absolute md:mt-0 top-[84px] md:left-1/2 md:-translate-x-1/2 custom-height">

@@ -10,6 +10,7 @@
 
 <svelte:head>
   <title>arithefirst</title>
+  <meta name="description" content="The portfolio website for April Hall (arithefirst)" />
 </svelte:head>
 
 <Hero />

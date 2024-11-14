@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { fade } from "svelte/transition";
+  import { fade } from 'svelte/transition';
   interface Props {
     description: string;
     name: string;
@@ -19,7 +19,7 @@
     hover = false;
   }}
   alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
-  src={"/skillicons/" + name + ".svg"}
+  src={'/skillicons/' + name + '.svg'}
   class="border-2 rounded-[18px] w-16 h-16 inline-block m-0.5 md:m-1 {'type-' + type}"
 />
 <!-- Popover -->
@@ -34,7 +34,7 @@
       <div class="px-3 py-2 bg-base-200 border-b border-base-300 rounded-t-lg">
         <img
           alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
-          src={"/skillicons/" + name + ".svg"}
+          src={'/skillicons/' + name + '.svg'}
           class="h-8 w-8 mx-auto"
         />
         <h3 class="font-semibold text-center dark:text-white">

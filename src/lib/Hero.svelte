@@ -1,3 +1,13 @@
+<script lang="ts">
+  import { onMount } from 'svelte';
+  let darkMode: boolean = true;
+
+  onMount(() => {
+    const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
+    darkMode = darkThemeMq.matches;
+  });
+</script>
+
 <div id="hero" class="hero min-h-screen">
   <div class="hero-content text-center">
     <div class="my-auto">
@@ -11,31 +21,48 @@
   </div>
 </div>
 
+{#if darkMode}
+  <style>
+    @keyframes animateBackground {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 10000px 0;
+      }
+    }
+
+    .hero {
+      background-image: linear-gradient(oklch(var(--p)) 2px, transparent 2px),
+        linear-gradient(to right, oklch(var(--p)) 2px, transparent 2px) !important;
+      background-size: 32px 32px;
+      background-color: oklch(var(--a));
+      animation: animateBackground 500s linear infinite;
+    }
+  </style>
+{:else}
+  <style>
+    @keyframes animateBackground {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: 10000px 0;
+      }
+    }
+
+    .hero {
+      background-image: linear-gradient(oklch(var(--a)) 2px, transparent 2px),
+        linear-gradient(to right, oklch(var(--a)) 2px, transparent 2px);
+      background-size: 32px 32px;
+      background-color: oklch(var(--p));
+      animation: animateBackground 500s linear infinite;
+    }
+  </style>
+{/if}
+
 <style>
-  @keyframes animateBackground {
-    from {
-      background-position: 0 0;
-    }
-    to {
-      background-position: 10000px 0;
-    }
-  }
-
-  :global(.light) {
-    background-image: linear-gradient(oklch(var(--a)) 2px, transparent 2px), linear-gradient(to right, oklch(var(--a)) 2px, transparent 2px);
-    background-size: 32px 32px;
-    background-color: oklch(var(--p));
-    animation: animateBackground 500s linear infinite;
-  }
-
-  :global(.dark) {
-    background-image: linear-gradient(oklch(var(--p)) 2px, transparent 2px), linear-gradient(to right, oklch(var(--p)) 2px, transparent 2px) !important;
-    background-size: 32px 32px;
-    background-color: oklch(var(--a));
-    animation: animateBackground 500s linear infinite;
-  }
-
   h1 {
-    font-family: "Silkscreen", sans-serif;
+    font-family: 'Silkscreen', sans-serif;
   }
 </style>

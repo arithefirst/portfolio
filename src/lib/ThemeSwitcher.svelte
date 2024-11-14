@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { onMount } from "svelte";
-  import "../app.css";
-  let theme: string = $state();
+  import { onMount } from 'svelte';
+  import './app.css';
+  let theme: string = $state('dark');
   interface Props {
     setFill: Function;
   }
@@ -9,30 +9,25 @@
   let { setFill }: Props = $props();
 
   function themeSet(input: string) {
-    const hero = window.document.getElementById("hero")!;
-    if (hero! !== null) {
-      hero!.classList.add(input);
-      input === "dark" ? hero.classList.remove("light") : hero.classList.remove("dark");
-    }
-    document.documentElement.setAttribute("data-theme", input);
+    document.documentElement.setAttribute('data-theme', input);
     theme = input;
   }
 
   function toggleTheme() {
-    if (theme === "dark") {
-      themeSet("light");
+    if (theme === 'dark') {
+      themeSet('light');
     } else {
-      themeSet("dark");
+      themeSet('dark');
     }
     setFill();
   }
 
   onMount(() => {
-    const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+    const darkThemeMq = window.matchMedia('(prefers-color-scheme: dark)');
     if (darkThemeMq.matches) {
-      themeSet("dark");
+      themeSet('dark');
     } else {
-      themeSet("light");
+      themeSet('light');
     }
   });
 </script>
@@ -44,7 +39,13 @@
   aria-label="Switch Theme"
   onclick={toggleTheme}
 >
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="80%" width="80%" viewBox="0 0 16 16">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    height="80%"
+    width="80%"
+    viewBox="0 0 16 16"
+  >
     <defs>
       <path
         fill="#fffffd"

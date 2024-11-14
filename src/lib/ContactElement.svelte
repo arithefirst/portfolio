@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Icon from "@iconify/svelte";
+  import Icon from '@iconify/svelte';
   interface Props {
     icon: string;
     name: string;
@@ -7,7 +7,7 @@
     className?: string;
   }
 
-  let { icon, name, href, className = "" }: Props = $props();
+  let { icon, name, href, className = '' }: Props = $props();
 </script>
 
 <a

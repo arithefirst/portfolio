@@ -1,19 +1,18 @@
 <script lang="ts">
-  import "./app.css";
-  import Hero from "./lib/Hero.svelte";
-  import Navbar from "./lib/Navbar.svelte";
-  import Techstack from "./lib/Techstack.svelte";
-  import Projectcard from "./lib/Projectcard.svelte";
+  import Hero from '$lib/Hero.svelte';
+  import Techstack from '$lib/Techstack.svelte';
+  import Projectcard from '$lib/Projectcard.svelte';
 
   // Inject vercel speed insights
-  import { injectSpeedInsights } from "@vercel/speed-insights";
+  import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
   injectSpeedInsights();
 </script>
 
-<Navbar />
+<svelte:head>
+  <title>arithefirst</title>
+</svelte:head>
 
 <Hero />
-
 <Techstack />
 
 <div class="projects" id="projects">
@@ -27,7 +26,7 @@
       src="/lockbox.svg"
       alt="valo builder logo"
       desc="A password protected dropbox where users given a password can upload a file "
-      tags={["DaisyUI", "Docker", "Svelte", "Sveltekit", "Tailwind", "Typescript"]}
+      tags={['DaisyUI', 'Docker', 'Svelte', 'Sveltekit', 'Tailwind', 'Typescript']}
     />
     <Projectcard
       href="https://github.com/arithefirst/now-playing-widget"
@@ -35,7 +34,7 @@
       src="/now-playing-widget.webp"
       alt="now playing widget preview"
       desc="A simple widget to show the current song playing on your spotify account. Useful for twitch streams and youtube videos"
-      tags={["Golang", "Javascript", "HTML5", "CSS3"]}
+      tags={['Golang', 'Javascript', 'HTML5', 'CSS3']}
     />
     <Projectcard
       href="https://github.com/arithefirst/portfolio"
@@ -43,7 +42,7 @@
       src="/pfp.png"
       alt="cat from 2023 steam summer sale"
       desc="My portfolio website, the one you're on now!"
-      tags={["DaisyUI", "Svelte", "Tailwind", "Typescript", "Vercel"]}
+      tags={['DaisyUI', 'Svelte', 'Tailwind', 'Typescript', 'Vercel']}
     />
     <Projectcard
       href="https://github.com/arithefirst/valo-builder"
@@ -51,7 +50,7 @@
       src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
       alt="valo builder logo"
       desc="A website for building VALORANT skin collections without sending all of your money to Riot Games"
-      tags={["Golang", "Svelte", "CSS3"]}
+      tags={['Golang', 'Svelte', 'CSS3']}
     />
   </div>
 </div>

@@ -1,8 +1,8 @@
 <script lang="ts">
   // See codepen.io/April-Hall/pen/ZEgEGEg
   // for my original concept for this
-  import TechImg from "./TechImg.svelte";
-  import { items } from "./techItems";
+  import TechImg from './TechImg.svelte';
+  import { items } from './techItems';
   let mode: number = $state();
   function setOffset(m: number) {
     mode = m;

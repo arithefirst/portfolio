@@ -1,4 +1,5 @@
 -----BEGIN PGP PUBLIC KEY BLOCK-----
+Comment: April Hall's PGP Public Key
 
 mDMEZysK/xYJKwYBBAHaRw8BAQdAYROQWWrw0jTKAngCeYttF77/HzfAX5WtY34i
 HDJOkOi0IEFwcmlsIEhhbGwgPGFyaUBhcml0aGVmaXJzdC5jb20+iJMEExYKADsW

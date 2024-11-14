@@ -99,7 +99,7 @@
           icon="simple-icons:youtube"
           name="Youtube"
         />
-        <ContactElement className="col-span-3" href="/publickey.asc" icon="fa:lock" name="PGP Public Key" />
+        <ContactElement className="col-span-3" href="/publickey.txt" icon="fa:lock" name="PGP Public Key" />
       </div>
     </div>
   </div>

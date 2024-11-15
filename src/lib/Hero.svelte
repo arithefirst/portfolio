@@ -12,24 +12,24 @@
 </div>
 
 <style>
-    @keyframes animateBackground {
-      from {
-        background-position: 0 0;
-      }
-      to {
-        background-position: 10000px 0;
-      }
+  @keyframes animateBackground {
+    from {
+      background-position: 0 0;
     }
+    to {
+      background-position: 10000px 0;
+    }
+  }
 
-    h1 {
-        font-family: 'Silkscreen', sans-serif;
-    }
+  h1 {
+    font-family: 'Silkscreen', sans-serif;
+  }
 
-    .hero {
-      background-image: linear-gradient(oklch(var(--p)) 2px, transparent 2px),
-        linear-gradient(to right, oklch(var(--p)) 2px, transparent 2px) !important;
-      background-size: 32px 32px;
-      background-color: oklch(var(--a));
-      animation: animateBackground 500s linear infinite;
-    }
+  .hero {
+    background-image: linear-gradient(oklch(var(--p)) 2px, transparent 2px),
+      linear-gradient(to right, oklch(var(--p)) 2px, transparent 2px) !important;
+    background-size: 32px 32px;
+    background-color: oklch(var(--a));
+    animation: animateBackground 500s linear infinite;
+  }
 </style>

@@ -7,7 +7,7 @@ const config = {
   // for more information about preprocessors
   preprocess: vitePreprocess(),
   runtime: 'nodejs20.x',
-  kit: { adapter: adapter()},
+  kit: { adapter: adapter() }
 };
 
 export default config;

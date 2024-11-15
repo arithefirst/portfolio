@@ -1,30 +1,17 @@
 <script lang="ts">
-  import ThemeSwitcher from '$lib/ThemeSwitcher.svelte';
-  import { onMount } from 'svelte';
-
+  import '$lib/app.css'
   let { children } = $props();
-  let fill: string = $state('#a6adbb');
   let open: boolean = $state(false);
-
-  function setFill() {
-    if (document.documentElement.getAttribute('data-theme') === 'dark') {
-      fill = '#a6adbb';
-    } else {
-      fill = '#1f2937';
-    }
-  }
-
-  onMount(() => setFill());
 </script>
 
 <div
   class="fixed md:mx-auto md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]"
 >
   <div class="navbar-start">
-    <a href="/" class="btn btn-ghost dark:text-white text-xl">arithefirst</a>
+    <a href="/" class="btn btn-ghost text-white text-xl">arithefirst</a>
   </div>
   <div class="navbar-center hidden md:flex">
-    <ul class="menu menu-horizontal dark:text-white px-1">
+    <ul class="menu menu-horizontal text-white px-1">
       <li><a href="/#hero">Home</a></li>
       <li><a href="/contact">Contact</a></li>
       <li><a href="/#projects">Projects</a></li>
@@ -36,8 +23,7 @@
         <input bind:checked={open} type="checkbox" aria-label="Open nav menu" />
         <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" class="swap-off m-auto" viewBox="0 0 24 24">
           <g
-            {fill}
-            stroke={fill}
+            stroke="#a6adbb"
             stroke-dasharray="16"
             stroke-dashoffset="16"
             stroke-linecap="round"
@@ -51,7 +37,7 @@
         </svg>
 
         <svg xmlns="http://www.w3.org/2000/svg" class="swap-on m-auto" width="80%" height="80%" viewBox="0 0 24 24">
-          <g {fill} stroke={fill} stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <g stroke="#a6adbb" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
             <path d="M12 12H12" opacity="0" />
             <path d="M5 5L19 19M5 19L19 5" />
           </g>
@@ -63,7 +49,6 @@
         <li><a href="/#projects">Projects</a></li>
       </ul>
     </details>
-    <ThemeSwitcher {setFill} />
   </div>
 </div>
 

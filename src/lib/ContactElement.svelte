@@ -13,8 +13,7 @@
 <a
   class="h-8 w-full min-w-48 btn mx-1
     relative my-0.5 btn-primary
-    light:text-accent-content
-    dark:text-base-content
+    text-base-content
     border-transparent shadow-md
     {className}"
   {href}

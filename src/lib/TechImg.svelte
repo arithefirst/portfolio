@@ -37,7 +37,7 @@
           src={'/skillicons/' + name + '.svg'}
           class="h-8 w-8 mx-auto"
         />
-        <h3 class="font-semibold text-center dark:text-white">
+        <h3 class="font-semibold text-center text-white">
           {caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
         </h3>
       </div>

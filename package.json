@@ -1,6 +1,6 @@
 {
-  "name": "portfolio-sk",
-  "version": "0.0.1",
+  "name": "portfolio",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite dev",
@@ -9,7 +9,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "format": "prettier --write .",
-    "lint": "prettier --check ."
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "^3.3.1",
@@ -29,6 +29,9 @@
     "@iconify/svelte": "^4.0.2",
     "@sveltejs/adapter-vercel": "^5.4.7",
     "@vercel/speed-insights": "^1.1.0",
-    "daisyui": "^4.12.14"
+    "daisyui": "^4.12.14",
+    "eslint": "^9.15.0",
+    "eslint-plugin-svelte": "^2.46.0",
+    "typescript-eslint": "^8.15.0"
   }
 }

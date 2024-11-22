@@ -23,7 +23,7 @@
         @arithefirst (almost) everywhere
       </h1>
       <div
-        class="relative mb-5 h-fit md:w-fit w-10/12 grid md:grid-cols-6 grid-cols-1 mx-auto justify-items-center gap-1"
+        class="relative mb-5 h-fit md:w-fit w-10/12 grid md:grid-cols-6 grid-cols-1 mx-auto justify-items-center gap-2"
       >
         <ContactElement
           className="col-span-2"

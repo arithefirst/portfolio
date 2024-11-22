@@ -5,7 +5,7 @@
 <div class="projects" id="projects">
   <h1 class="text-3xl font-bold text-center md:mt-5 mt-5">Projects</h1>
   <hr class="w-1/2 mx-auto my-3 border-base-content" />
-  <div class="md:grid-cols-4 grid-cols-1 w-fit mx-auto flex flex-wrap justify-center gap-4">
+  <div class="grid-cols-4 w-fit mx-auto flex flex-wrap justify-center gap-4">
     <!--  Add <ProjectCard /> Components here  -->
     <ProjectCard
       href="https://github.com/arithefirst/lockbox"

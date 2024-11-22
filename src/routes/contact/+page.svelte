@@ -17,7 +17,7 @@
       <img
         alt="cat from 2023 steam summer sale"
         class="relative w-[15w] mx-auto aspect-square rounded-3xl"
-        src="/pfp.png"
+        src="/images/pfp.png"
       />
       <h1 class="text-center relative font-bold md:text-3xl text-xl my-2 text-white">
         @arithefirst (almost) everywhere

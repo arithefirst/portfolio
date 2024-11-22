@@ -29,7 +29,7 @@
       src="/images/pfp.png"
       alt="cat from 2023 steam summer sale"
       desc="My portfolio website, the one you're on now!"
-      tags={['DaisyUI', 'Svelte', 'Tailwind', 'Typescript', 'Vercel']}
+      tags={['DaisyUI', 'Svelte', 'Sveltekit', 'Tailwind', 'Typescript', 'Vercel']}
     />
   </div>
 </div>

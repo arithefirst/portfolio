@@ -31,13 +31,5 @@
       desc="My portfolio website, the one you're on now!"
       tags={['DaisyUI', 'Svelte', 'Tailwind', 'Typescript', 'Vercel']}
     />
-    <ProjectCard
-      href="https://github.com/arithefirst/valo-builder"
-      name="Valo Builder"
-      src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM="
-      alt="valo builder logo"
-      desc="A website for building VALORANT skin collections without sending all of your money to Riot Games"
-      tags={['Golang', 'Svelte', 'CSS3']}
-    />
   </div>
 </div>

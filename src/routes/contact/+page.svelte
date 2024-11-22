@@ -11,7 +11,9 @@
   <meta name="description" content="Everywhere you can find April Hall" />
 </svelte:head>
 
-<div class="w-screen mt-[76px] md:absolute md:mt-0 md:top-[84px] md:left-1/2 md:-translate-x-1/2 custom-height">
+<div class="bg-accent z-0 fixed left-0 top-0 w-screen h-screen"></div>
+
+<div class="w-screen mt-[76px] z-10 md:absolute md:mt-0 md:top-[84px] md:left-1/2 md:-translate-x-1/2 custom-height">
   <div class="md:flex md:justify-center h-fit md:items-center md:w-full md:h-full">
     <div>
       <img

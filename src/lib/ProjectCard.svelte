@@ -23,7 +23,7 @@
     </figure>
     <div class="card-body">
       <h2 class="card-title">{name}</h2>
-      <p>{desc}</p>
+      <p class="mb-1">{desc}</p>
       <div class="card-actions justify-end">
         {#each tags as tag}
           <div class="badge badge-outline">{tag}</div>

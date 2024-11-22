@@ -20,7 +20,7 @@
       name="Now Playing Widget"
       src="/images/now-playing-widget.webp"
       alt="now playing widget preview"
-      desc="A simple widget to show the current song playing on your spotify account. Useful for twitch streams and youtube videos"
+      desc="A simple widget to show the current song playing on your spotify account."
       tags={['Golang', 'Javascript', 'JQuery', 'HTML', 'CSS']}
     />
     <ProjectCard

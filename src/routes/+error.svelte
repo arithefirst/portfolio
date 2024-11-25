@@ -35,7 +35,9 @@
   <title>Error: {$page.status}</title>
 </svelte:head>
 
-<div class="text-center absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+<div class="fixed z-0 left-0 top-0 w-screen h-screen bg-base-300"></div>
+
+<div class="z-10 text-center absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
   <h1 class="text-[200px] leading-none font-extrabold text-accent">{$page.status}</h1>
   <h2 class="2xl font-bold text-primary">{responses.get($page.status)}</h2>
 </div>

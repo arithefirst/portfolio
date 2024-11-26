@@ -1,7 +1,5 @@
 <script lang="ts">
-  import '$lib/app.css';
-  let { children } = $props();
-  let open: boolean = $state(false);
+  let open: boolean = false;
 </script>
 
 <div
@@ -51,5 +49,3 @@
     </details>
   </div>
 </div>
-
-{@render children()}

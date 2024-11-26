@@ -3,7 +3,7 @@
   // for my original concept for this
   import TechImg from './TechImg.svelte';
   import { items } from './techItems';
-  let mode: number = $state();
+  let mode: number;
   function setOffset(m: number) {
     mode = m;
   }
@@ -66,24 +66,21 @@
       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   </style>
-{/if}
-{#if mode === 2}
+{:else if mode === 2}
   <style>
     .type-framework {
       border-color: oklch(var(--p)) !important;
       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   </style>
-{/if}
-{#if mode === 3}
+{:else if mode === 3}
   <style>
     .type-lang {
       border-color: oklch(var(--p)) !important;
       transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
   </style>
-{/if}
-{#if mode === 4}
+{:else if mode === 4}
   <style>
     .type-other {
       border-color: oklch(var(--p)) !important;

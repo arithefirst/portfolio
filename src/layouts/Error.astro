@@ -1,0 +1,17 @@
+---
+import Head from './Head.astro';
+let { msgFull } = Astro.props;
+const { code, msgShort } = Astro.props;
+msgFull = !msgFull ? msgShort : msgFull;
+---
+
+<html>
+  <Head title={msgShort} description={msgFull} />
+  <body class="w-screen h-screen">
+    <div class="z-10 text-center w-screen h0screen absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+      <h1 class="text-[200px] leading-none font-extrabold text-accent">{code}</h1>
+      <h2 class="2xl font-bold text-primary">{msgFull}</h2>
+      <a href="/" class="btn btn-accent btn-sm px-4 mt-3">Go Home</a>
+    </div>
+  </body>
+</html>

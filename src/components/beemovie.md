@@ -1329,7 +1329,7 @@ If anybody needs to make a call, now's the time. I got a feeling we'll be workin
 Here's your change. Have a great afternoon! Can I help who's next?<br>
 Would you like some honey with that?<br>
 It is bee-approved. Don't forget these.<br>
-Milk, cream, cheese, it's all me.  And I don't see a nickel!<br>
+Milk, cream, cheese, it's all me. And I don't see a nickel!<br>
 Sometimes I just feel like a piece of meat!<br>
 I had no idea.<br>
 Barry, I'm sorry.<br>

@@ -14,6 +14,12 @@ export const items: item[] = [
     caps: false
   },
   {
+    name: 'astro',
+    type: 'framework',
+    description: 'Astro is a modern web framework designed for building fast, content-focused websites. It uses a "bring your own framework" approach, allowing you to integrate popular tools like React, Vue, or Svelte, and optimizes performance by delivering only the minimal JavaScript needed for your pages.',
+    caps: false
+  },
+  {
     name: 'bash',
     type: 'lang',
     description:

@@ -1,14 +1,15 @@
 <script lang="ts">
+  import type { Snippet } from 'svelte';
+
   interface Props {
     name: string;
-    src: string;
-    alt: string;
     href: string;
     desc: string;
     tags: string[];
+    children: Snippet;
   }
 
-  let { name, src, alt, href, desc, tags }: Props = $props();
+  let { name, href, desc, tags, children }: Props = $props();
 </script>
 
 <a
@@ -19,7 +20,7 @@
 >
   <div class="card">
     <figure>
-      <img {src} {alt} class="object-cover w-full h-full bg-base-300" />
+      {@render children?.()}
     </figure>
     <div class="card-body">
       <h2 class="card-title">{name}</h2>

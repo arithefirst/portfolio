@@ -1,0 +1,16 @@
+---
+import { Image } from 'astro:assets'
+import BarryBee from '../images/barry.png'
+import BeeMovie from '../components/beemovie.md'
+import Head from '../layouts/Head.astro';
+---
+
+<Head title="barry bee movie" description="black yellow black yellow" />
+
+<body>
+  <div class="text-center py-4">
+    <BeeMovie />
+  </div>
+  <Image src={BarryBee} alt="Barry Bee benson leaning on nothing like a fool" class="max-w-[500px] w-auto mx-auto" />
+  <p class="text-center py-4"><i>"Ya like jazz?" -Barry Bee Benson, 2007</i></p>
+</body>

@@ -16,7 +16,8 @@ export const items: item[] = [
   {
     name: 'astro',
     type: 'framework',
-    description: 'Astro is a modern web framework designed for building fast, content-focused websites. It uses a "bring your own framework" approach, allowing you to integrate popular tools like React, Vue, or Svelte, and optimizes performance by delivering only the minimal JavaScript needed for your pages.',
+    description:
+      'Astro is a modern web framework designed for building fast, content-focused websites. It uses a "bring your own framework" approach, allowing you to integrate popular tools like React, Vue, or Svelte, and optimizes performance by delivering only the minimal JavaScript needed for your pages.',
     caps: false
   },
   {
@@ -177,13 +178,6 @@ export const items: item[] = [
     type: 'lang',
     description:
       'TypeScript is a superset of JavaScript that adds static typing and advanced features, allowing developers to catch errors early and enhance code maintainability while still being compatible with existing JavaScript code.',
-    caps: false
-  },
-  {
-    name: 'vim',
-    type: 'tool',
-    description:
-      'Vim is a highly configurable text editor designed for efficient text editing, featuring a modal interface that allows users to switch between different modes for inserting text, navigating, and executing commands.',
     caps: false
   },
   {

@@ -54,7 +54,7 @@
 
   <div class="w-11/12 md:w-1/2 h-fit mx-auto relative img-container flex flex-wrap justify-center">
     {#each items as item}
-      <TechImg type={item.type} name={item.name} description={item.description} caps={item.caps} />
+      <TechImg type={item.type} name={item.name} description={item.description} caps={item.caps}/>
     {/each}
   </div>
 </div>

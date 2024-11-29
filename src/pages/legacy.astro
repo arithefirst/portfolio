@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import pfpPng from '../../public/images/pfp.png';
 import LegacySite from '../layouts/Legacy.svelte';
 import Head from '../layouts/Head.astro';
 ---
@@ -10,6 +12,12 @@ import Head from '../layouts/Head.astro';
     <meta name="robots" content="noindex" />
   </Head>
   <body>
-    <LegacySite />
+    <LegacySite>
+      <Image
+        class="mx-auto rounded-[10px] shadow-legacy-img w-1/2 aspect-square"
+        src={pfpPng}
+        alt="cat from 2023 steam summer sale"
+      />
+    </LegacySite>
   </body>
 </html>

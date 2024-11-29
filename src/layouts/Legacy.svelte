@@ -90,7 +90,7 @@
           <div class="wrapper">
             <div class="inner">
               <div id="image01">
-                <span class="frame"><img src="images/pfp.png" alt="cat from 2023 steam summer sale" id="pfp" /></span>
+                <span class="frame"><slot></slot></span>
               </div>
               <h1 id="text01">April Hall</h1>
               <p id="text03">
@@ -100,7 +100,7 @@
               <ul id="buttons02" class="buttons">
                 <li>
                   <a
-                    href="https://www.amazon.com/hz/wishlist/ls/QHVOTYJP10CZ/ref=nav_wishlist_lists_1"
+                    href="https://www.amazon.com/hz/wishlist/ls/1F2RJS322A2NR?sort=price-asc"
                     target="_blank"
                     class="button n01"
                   >
@@ -724,6 +724,7 @@
       --spacing: 1.40625rem;
     }
   }
+
   #background {
     height: 100vh;
     width: 100vw;
@@ -733,13 +734,5 @@
     background: linear-gradient(315deg, rgba(202, 160, 220, 1) 0%, rgba(239, 149, 156, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#caa0dc",endColorstr="#ef959c",GradientType=1);
     position: fixed;
-  }
-
-  #pfp {
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0.5rem 0.5rem 0 rgba(38, 37, 37, 0.541);
-    width: 50%;
-    aspect-ratio: 1/1;
   }
 </style>

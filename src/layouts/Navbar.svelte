@@ -3,8 +3,7 @@
 </script>
 
 <div
-  class="fixed md:mx-auto md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]"
->
+  class="fixed md:mx-auto md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]">
   <div class="navbar-start">
     <a href="/" class="btn btn-ghost text-white text-xl">arithefirst</a>
   </div>
@@ -26,8 +25,7 @@
             stroke-dashoffset="16"
             stroke-linecap="round"
             stroke-linejoin="round"
-            stroke-width="2"
-          >
+            stroke-width="2">
             <path d="M5 5h14" stroke-dashoffset="0" />
             <path d="M5 12h14" stroke-dashoffset="0" />
             <path d="M5 19h14" stroke-dashoffset="0" />

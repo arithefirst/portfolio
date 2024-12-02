@@ -21,8 +21,7 @@
       }}
       onmouseleave={() => {
         setOffset(0);
-      }}>Tools</button
-    >
+      }}>Tools</button>
     <button
       class="btn md:btn-sm btn-xs btn-primary mx-1"
       onmouseenter={() => {
@@ -30,8 +29,7 @@
       }}
       onmouseleave={() => {
         setOffset(0);
-      }}>Frameworks & Libs</button
-    >
+      }}>Frameworks & Libs</button>
     <button
       class="btn md:btn-sm btn-xs btn-primary mx-1"
       onmouseenter={() => {
@@ -39,8 +37,7 @@
       }}
       onmouseleave={() => {
         setOffset(0);
-      }}>Languages</button
-    >
+      }}>Languages</button>
     <button
       class="btn md:btn-sm btn-xs btn-primary mx-1"
       onmouseenter={() => {
@@ -48,8 +45,7 @@
       }}
       onmouseleave={() => {
         setOffset(0);
-      }}>Other</button
-    >
+      }}>Other</button>
   </div>
 
   <div class="w-11/12 md:w-1/2 h-fit mx-auto relative img-container flex flex-wrap justify-center">

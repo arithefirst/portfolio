@@ -102,8 +102,7 @@
                   <a
                     href="https://www.amazon.com/hz/wishlist/ls/1F2RJS322A2NR?sort=price-asc"
                     target="_blank"
-                    class="button n01"
-                  >
+                    class="button n01">
                     <svg>
                       <use xlink:href="#icon-baf4300f501aae4c1930e4344f77b381"></use>
                     </svg>
@@ -122,8 +121,7 @@
                   <a
                     href="https://www.discogs.com/user/arithefirst/collection?header=1"
                     target="_blank"
-                    class="button n02"
-                  >
+                    class="button n02">
                     <svg>
                       <use xlink:href="#icon-2324cca7d3647d5d437815fe39f4cb67"></use>
                     </svg>

@@ -20,8 +20,7 @@
   }}
   alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
   src={'/skillicons/' + name + '.svg'}
-  class="border-2 rounded-[18px] w-16 h-16 inline-block m-0.5 md:m-1 {'type-' + type}"
-/>
+  class="border-2 rounded-[18px] w-16 h-16 inline-block m-0.5 md:m-1 {'type-' + type}" />
 <!-- Popover -->
 {#if hover}
   <div class="w-fit h-fit relative opacity-0 md:opacity-100">
@@ -29,14 +28,12 @@
       in:fade={{ duration: 150, delay: 250 }}
       out:fade={{ duration: 100, delay: 0 }}
       class="absolute z-10 inline-block md:w-48 lg:w-64 text-sm text-base-content bg-base-100
-            border border-base-300 rounded-lg shadow-sm"
-    >
+            border border-base-300 rounded-lg shadow-sm">
       <div class="px-3 py-2 bg-base-200 border-b border-base-300 rounded-t-lg">
         <img
           alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
           src={'/skillicons/' + name + '.svg'}
-          class="h-8 w-8 mx-auto"
-        />
+          class="h-8 w-8 mx-auto" />
         <h3 class="font-semibold text-center text-white">
           {caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
         </h3>

@@ -1,7 +1,24 @@
 ---
 import Head from '../layouts/Head.astro';
 import Navbar from '../layouts/Navbar.svelte';
+import { Image } from 'astro:assets';
 import ContactElement from '../components/ContactElement.svelte';
+
+// Images
+import AmazonIcon from '../images/icons/amazon.svg';
+import BskyIcon from '../images/icons/bsky.svg';
+import DiscogsIcon from '../images/icons/discogs.svg';
+import DiscordIcon from '../images/icons/discord.svg';
+import EmailIcon from '../images/icons/email.svg';
+import GithubIcon from '../images/icons/github.svg';
+import InstagramIcon from '../images/icons/instagram.svg';
+import LockIcon from '../images/icons/lock.svg';
+import PronounsDotPageIcon from '../images/icons/pronounsdotpage.svg';
+import SignalIcon from '../images/icons/signal.svg';
+import SpotifyIcon from '../images/icons/spotify.svg';
+import SteamIcon from '../images/icons/steam.svg';
+import TikTokIcon from '../images/icons/tiktok.svg';
+import YouTubeIcon from '../images/icons/youtube.svg';
 ---
 
 <html class="bg-accent" lang="en">
@@ -9,8 +26,7 @@ import ContactElement from '../components/ContactElement.svelte';
   <body class="md:overflow-hidden overflow-y-scroll overflow-x-hidden">
     <Navbar />
     <div
-      class="w-screen mt-[76px] z-10 md:absolute md:mt-0 md:top-[84px] md:left-1/2 md:-translate-x-1/2 custom-height"
-    >
+      class="w-screen mt-[76px] z-10 md:absolute md:mt-0 md:top-[84px] md:left-1/2 md:-translate-x-1/2 custom-height">
       <div class="md:flex md:justify-center h-fit md:items-center md:w-full md:h-full">
         <div>
           <img
@@ -22,112 +38,76 @@ import ContactElement from '../components/ContactElement.svelte';
             @arithefirst (almost) everywhere
           </h1>
           <div
-            class="relative mb-5 h-fit md:w-fit w-10/12 grid md:grid-cols-6 grid-cols-1 mx-auto justify-items-center gap-2"
-          >
+            class="relative mb-5 h-fit md:w-fit w-10/12 grid md:grid-cols-6 grid-cols-1 mx-auto justify-items-center gap-2">
             <ContactElement
               className="md:col-span-2"
               href="https://www.amazon.com/hz/wishlist/ls/1F2RJS322A2NR?sort=price-asc"
-              icon="amazon"
               name="Amazon Wishlist"
-              
-            />
-            <ContactElement
-              className="md:col-span-2"
-              href="https://bsky.app/profile/arithefirst.com"
-              icon="bsky"
-              name="Bluesky"
-              
-            />
+              ><Image class="absolute right-5 h-5 text-white" src={AmazonIcon} alt="Amazon Logo" /></ContactElement
+            >
+            <ContactElement className="md:col-span-2" href="https://bsky.app/profile/arithefirst.com" name="Bluesky"
+              ><Image class="absolute right-5 h-5 text-white" src={BskyIcon} alt="Bluesky Logo" /></ContactElement
+            >
             <ContactElement
               className="md:col-span-2"
               href="https://www.discogs.com/user/arithefirst/collection?header=1"
-              icon="discogs"
               name="Discogs"
-              
-            />
-            <ContactElement
-              className="md:col-span-2"
-              href="https://discord.com/users/613358761901424652"
-              icon="discord"
-              name="Discord"
-              
-            />
-            <ContactElement
-              className="md:col-span-2"
-              href="mailto:ari@arithefirst.com"
-              icon="email"
-              name="E-Mail"
-              
-            />
-            <ContactElement
-              className="md:col-span-2"
-              href="https://github.com/arithefirst"
-              icon="github"
-              name="Github"
-              
-            />
-            <ContactElement
-              className="md:col-span-2"
-              href="https://www.instagram.com/_arithefirst_/"
-              icon="instagram"
-              name="Instagram"
-              
-            />
-            <ContactElement
-              className="md:col-span-2"
-              href="https://en.pronouns.page/@arithefirst"
-              icon="pronounsdotpage"
-              name="Pronouns.page"
-              
-            />
+              ><Image class="absolute right-5 h-5 text-white" src={DiscogsIcon} alt="Discogs Logo" /></ContactElement
+            >
+            <ContactElement className="md:col-span-2" href="https://discord.com/users/613358761901424652" name="Discord"
+              ><Image class="absolute right-5 h-5 text-white" src={DiscordIcon} alt="Discord Logo" /></ContactElement
+            >
+            <ContactElement className="md:col-span-2" href="mailto:ari@arithefirst.com"
+              ><Image class="absolute right-5 h-5 text-white" src={EmailIcon} alt="envelope" /></ContactElement
+            >
+            <ContactElement className="md:col-span-2" href="https://github.com/arithefirst" name="Github"
+              ><Image class="absolute right-5 h-5 text-white" src={GithubIcon} alt="Github Logo" /></ContactElement
+            >
+            <ContactElement className="md:col-span-2" href="https://www.instagram.com/_arithefirst_/" name="Instagram"
+              ><Image
+                class="absolute right-5 h-5 text-white"
+                src={InstagramIcon}
+                alt="Instagram Logo"
+              /></ContactElement
+            >
+            <ContactElement className="md:col-span-2" href="https://en.pronouns.page/@arithefirst" name="Pronouns.page"
+              ><Image
+                class="absolute right-5 h-5 text-white"
+                src={PronounsDotPageIcon}
+                alt="Pronouns.page Logo"
+              /></ContactElement
+            >
             <ContactElement
               className="md:col-span-2"
               href="https://signal.me/#eu/NytIaD7wOcX0wBjv-rUs9T2jiOvF3691v0Ec1wa2CHNBvO5aeZ9BDoN6_uLod-TX"
-              icon="signal"
               name="Signal"
-              
-            />
-            <ContactElement
-              className="md:col-span-2"
-              href="https://stats.fm/arithefirst"
-              icon="spotify"
-              name="Spotify"
-              
-            />
-            <ContactElement
-              className="md:col-span-2"
-              href="https://steamcommunity.com/id/arithefirst/"
-              icon="steam"
-              name="Steam"
-              
-            />
-            <ContactElement
-              className="md:col-span-2"
-              href="https://www.tiktok.com/@arithefirst_"
-              icon="tiktok"
-              name="Tik-Tok"
-              
-            />
+              ><Image
+                class="absolute right-5 h-5 text-white"
+                src={SignalIcon}
+                alt="Signal Messneger Logo"
+              /></ContactElement
+            >
+            <ContactElement className="md:col-span-2" href="https://stats.fm/arithefirst" name="Spotify"
+              ><Image class="absolute right-5 h-5 text-white" src={SpotifyIcon} alt="Spotify Logo" /></ContactElement
+            >
+            <ContactElement className="md:col-span-2" href="https://steamcommunity.com/id/arithefirst/" name="Steam"
+              ><Image class="absolute right-5 h-5 text-white" src={SteamIcon} alt="Steam Logo" /></ContactElement
+            >
+            <ContactElement className="md:col-span-2" href="https://www.tiktok.com/@arithefirst_" name="Tik-Tok"
+              ><Image class="absolute right-5 h-5 text-white" src={TikTokIcon} alt="TikTok Logo" /></ContactElement
+            >
             <!-- Two item per row -->
-            <ContactElement
-              className="md:col-span-3"
-              href="https://youtube.com/@arithefirst_"
-              icon="youtube"
-              name="Youtube"
-              
-            />
-            <ContactElement
-              className="md:col-span-3"
-              href="/publickey.txt"
-              icon="lock"
-              name="PGP Public Key"
-              
-            />
-
-            <!--- Padding -->
-            <div class="h-4"></div>
+            <ContactElement className="md:col-span-3" href="https://youtube.com/@arithefirst_" name="Youtube"
+              ><Image class="absolute right-5 h-5 text-white" src={YouTubeIcon} alt="YouTube Logo" /></ContactElement
+            >
+            <ContactElement className="md:col-span-3" href="/publickey.txt" name="PGP Pubkey"
+              ><Image class="absolute right-5 h-5 text-white" src={LockIcon} alt="padlock" /></ContactElement
+            >
           </div>
         </div>
+
+        <!--- Padding -->
+        <div class="h-4"></div>
       </div>
     </div>
 

@@ -16,5 +16,12 @@ export default {
         }
       }
     ]
+  },
+  theme: {
+    extend: {
+      boxShadow: {
+        'legacy-img': '0 0.5rem 0.5rem 0 rgba(38, 37, 37, 0.541)'
+      }
+    }
   }
 };

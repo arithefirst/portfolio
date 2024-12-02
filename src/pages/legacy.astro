@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import pfpPng from '../../public/images/pfp.png';
+import LegacySite from '../layouts/Legacy.svelte';
+import Head from '../layouts/Head.astro';
+---
+
+<html lang="en">
+  <Head title="arithefirst" description="arithefirst's Website">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="robots" content="noindex" />
+  </Head>
+  <body>
+    <LegacySite>
+      <Image
+        class="mx-auto rounded-[10px] shadow-legacy-img w-1/2 aspect-square"
+        src={pfpPng}
+        alt="cat from 2023 steam summer sale"
+      />
+    </LegacySite>
+  </body>
+</html>

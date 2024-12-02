@@ -1,0 +1,7 @@
+User-Agent: *
+Sitemap: https://www.arithefirst.com/sitemap.xml
+
+# Do Not Index
+Disallow: /publickey.txt
+Disallow: /500
+Disallow: /404

@@ -5,6 +5,7 @@ import { Image } from 'astro:assets';
 import ContactElement from '../components/ContactElement.svelte';
 
 // Images
+import Pfp from '../../public/images/pfp.png';
 import AmazonIcon from '../images/icons/amazon.svg';
 import BskyIcon from '../images/icons/bsky.svg';
 import DiscogsIcon from '../images/icons/discogs.svg';
@@ -29,10 +30,10 @@ import YouTubeIcon from '../images/icons/youtube.svg';
       class="w-screen mt-[76px] z-10 md:absolute md:mt-0 md:top-[84px] md:left-1/2 md:-translate-x-1/2 custom-height">
       <div class="md:flex md:justify-center h-fit md:items-center md:w-full md:h-full">
         <div>
-          <img
+          <Image
             alt="cat from 2023 steam summer sale"
             class="relative w-[15w] mx-auto aspect-square rounded-3xl"
-            src="/images/pfp.png"
+            src={Pfp}
           />
           <h1 class="text-center relative font-bold md:text-3xl text-xl my-2 text-white">
             @arithefirst (almost) everywhere

@@ -1,7 +1,7 @@
 ---
 import Head from '../layouts/Head.astro';
 import Navbar from '../layouts/Navbar.svelte';
-import ContactElement from '../components/ContactElement.astro';
+import ContactElement from '../components/ContactElement.svelte';
 ---
 
 <html class="bg-accent" lang="en">
@@ -27,78 +27,90 @@ import ContactElement from '../components/ContactElement.astro';
             <ContactElement
               className="md:col-span-2"
               href="https://www.amazon.com/hz/wishlist/ls/1F2RJS322A2NR?sort=price-asc"
-              icon="icomoon-free:amazon"
+              icon="amazon"
               name="Amazon Wishlist"
+              brand={true}
             />
             <ContactElement
               className="md:col-span-2"
               href="https://bsky.app/profile/arithefirst.com"
-              icon="fa6-brands:bluesky"
+              icon="bluesky"
               name="Bluesky"
+              brand={true}
             />
             <ContactElement
               className="md:col-span-2"
               href="https://www.discogs.com/user/arithefirst/collection?header=1"
-              icon="simple-icons:discogs"
+              icon="discogs"
               name="Discogs"
+              brand={true}
             />
             <ContactElement
               className="md:col-span-2"
               href="https://discord.com/users/613358761901424652"
-              icon="simple-icons:discord"
+              icon="discord"
               name="Discord"
+              brand={true}
             />
-            <ContactElement className="md:col-span-2" href="mailto:ari@arithefirst.com" icon="uiw:mail" name="E-Mail" />
+            <ContactElement className="md:col-span-2" href="mailto:ari@arithefirst.com" icon="email" name="E-Mail" brand={false} />
             <ContactElement
               className="md:col-span-2"
               href="https://github.com/arithefirst"
-              icon="simple-icons:github"
+              icon="github"
               name="Github"
+              brand={true}
             />
             <ContactElement
               className="md:col-span-2"
               href="https://www.instagram.com/_arithefirst_/"
-              icon="simple-icons:instagram"
+              icon="instagram"
               name="Instagram"
+              brand={true}
             />
             <ContactElement
               className="md:col-span-2"
               href="https://en.pronouns.page/@arithefirst"
-              icon="simple-icons:pronounsdotpage"
+              icon="pronounsdotpage"
               name="Pronouns.page"
+              brand={true}
             />
             <ContactElement
               className="md:col-span-2"
               href="https://signal.me/#eu/NytIaD7wOcX0wBjv-rUs9T2jiOvF3691v0Ec1wa2CHNBvO5aeZ9BDoN6_uLod-TX"
-              icon="simple-icons:signal"
+              icon="signal"
               name="Signal"
+              brand={true}
             />
             <ContactElement
               className="md:col-span-2"
               href="https://stats.fm/arithefirst"
-              icon="simple-icons:spotify"
+              icon="spotify"
               name="Spotify"
+              brand={true}
             />
             <ContactElement
               className="md:col-span-2"
               href="https://steamcommunity.com/id/arithefirst/"
-              icon="simple-icons:steam"
+              icon="steam"
               name="Steam"
+              brand={true}
             />
             <ContactElement
               className="md:col-span-2"
               href="https://www.tiktok.com/@arithefirst_"
-              icon="simple-icons:tiktok"
+              icon="tiktok"
               name="Tik-Tok"
+              brand={true}
             />
             <!-- Two item per row -->
             <ContactElement
               className="md:col-span-3"
               href="https://youtube.com/@arithefirst_"
-              icon="simple-icons:youtube"
+              icon="youtube"
               name="Youtube"
+              brand={true}
             />
-            <ContactElement className="md:col-span-3" href="/publickey.txt" icon="fa:lock" name="PGP Public Key" />
+            <ContactElement className="md:col-span-3" href="/publickey.txt" icon="lock" name="PGP Public Key" brand={false} />
 
             <!--- Padding -->
             <div class="h-4"></div>

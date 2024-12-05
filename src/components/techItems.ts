@@ -28,13 +28,6 @@ export const items: item[] = [
     caps: false
   },
   {
-    name: 'bootstrap',
-    type: 'framework',
-    description:
-      'Bootstrap is a popular front-end framework that simplifies web development by providing pre-designed HTML, CSS, and JavaScript components for responsive and mobile-first design.',
-    caps: false
-  },
-  {
     name: 'bun',
     type: 'tool',
     description:
@@ -130,13 +123,6 @@ export const items: item[] = [
     description:
       "Node.js is a JavaScript runtime built on Chrome's V8 engine that enables the execution of Javascript outside of the browser",
     caps: false
-  },
-  {
-    name: 'npm',
-    type: 'tool',
-    description:
-      'NPM (Node Package Manager) is a package manager for JavaScript that simplifies the installation, management, and sharing of libraries and tools for Node.js applications.',
-    caps: true
   },
   {
     name: 'postgreSQL',

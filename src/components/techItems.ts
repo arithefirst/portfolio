@@ -180,18 +180,4 @@ export const items: item[] = [
       'Vite is a modern build tool and development server for JavaScript projects that provides fast, optimized development experiences using native ES modules, enabling instant server start and lightning-fast hot module replacement.',
     caps: false
   },
-  {
-    name: 'vscodium',
-    type: 'tool',
-    description:
-      'VSCodium is a free and open-source version of Visual Studio Code, stripped of telemetry and proprietary features, offering a lightweight code editor with the same powerful functionality for developers.',
-    caps: false
-  },
-  {
-    name: 'webstorm',
-    type: 'tool',
-    description:
-      'WebStorm is a powerful integrated development environment (IDE) from JetBrains specifically designed for JavaScript and related technologies.',
-    caps: false
-  }
 ];

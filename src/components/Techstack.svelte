@@ -15,7 +15,7 @@
 <div id="techstack">
   <div class="w-fit mx-auto my-2">
     <button
-      class="btn md:btn-sm btn-xs btn-primary mx-1"
+      class="btn no-animation md:btn-sm btn-xs btn-primary mx-1"
       onmouseenter={() => {
         setOffset(1);
       }}
@@ -23,7 +23,7 @@
         setOffset(0);
       }}>Tools</button>
     <button
-      class="btn md:btn-sm btn-xs btn-primary mx-1"
+      class="btn no-animation md:btn-sm btn-xs btn-primary mx-1"
       onmouseenter={() => {
         setOffset(2);
       }}
@@ -31,7 +31,7 @@
         setOffset(0);
       }}>Frameworks & Libs</button>
     <button
-      class="btn md:btn-sm btn-xs btn-primary mx-1"
+      class="btn no-animation md:btn-sm btn-xs btn-primary mx-1"
       onmouseenter={() => {
         setOffset(3);
       }}
@@ -39,7 +39,7 @@
         setOffset(0);
       }}>Languages</button>
     <button
-      class="btn md:btn-sm btn-xs btn-primary mx-1"
+      class="btn no-animation md:btn-sm btn-xs btn-primary mx-1"
       onmouseenter={() => {
         setOffset(4);
       }}

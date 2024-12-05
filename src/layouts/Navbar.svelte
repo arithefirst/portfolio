@@ -3,15 +3,15 @@
 </script>
 
 <div
-  class="fixed md:mx-auto md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]">
+  class="fixed md:mx-auto 2xl:h-20 md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]">
   <div class="navbar-start">
-    <a href="/" class="btn btn-ghost text-white text-xl">arithefirst</a>
+    <a href="/" class="btn btn-ghost text-white text-xl 2xl:text-2xl">arithefirst</a>
   </div>
   <div class="navbar-center hidden md:flex">
     <ul class="menu menu-horizontal text-white px-1">
-      <li><a href="/#hero">Home</a></li>
-      <li><a href="/contact">Contact</a></li>
-      <li><a href="/#projects">Projects</a></li>
+      <li><a class="2xl:text-lg" href="/#hero">Home</a></li>
+      <li><a class="2xl:text-lg" href="/contact">Contact</a></li>
+      <li><a class="2xl:text-lg" href="/#projects">Projects</a></li>
     </ul>
   </div>
   <div class="navbar-end">

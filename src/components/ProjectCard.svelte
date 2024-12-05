@@ -15,7 +15,7 @@
 <a
   {href}
   class="card bg-base-200 cursor-pointer relative grid w-64
-  my-3 md:hover:scale-[1.025] md:linear md:transition-all"
+  2xl:w-72 my-3 md:hover:scale-[1.025] md:linear md:transition-all"
   target="_blank">
   <div class="card">
     <figure>

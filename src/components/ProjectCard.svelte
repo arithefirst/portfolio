@@ -26,7 +26,7 @@
       <p class="mb-1">{desc}</p>
       <div class="card-actions justify-end">
         {#each tags as tag}
-          <div class="badge badge-outline">{tag}</div>
+          <div class="rounded-lg px-2 border-base-content border">{tag}</div>
         {/each}
       </div>
     </div>

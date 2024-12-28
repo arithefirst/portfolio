@@ -179,5 +179,5 @@ export const items: item[] = [
     description:
       'Vite is a modern build tool and development server for JavaScript projects that provides fast, optimized development experiences using native ES modules, enabling instant server start and lightning-fast hot module replacement.',
     caps: false
-  },
+  }
 ];

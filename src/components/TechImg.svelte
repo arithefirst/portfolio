@@ -5,26 +5,38 @@
     name: string;
     type: string;
     caps: boolean;
+    href?: string | undefined;
   }
 
-  let { description, name, type, caps }: Props = $props();
+  let { description, name, type, caps, href }: Props = $props();
   let hover: boolean = $state(false);
 </script>
 
-<img
-  onmouseenter={() => {
-    hover = true;
-  }}
-  onmouseleave={() => {
-    hover = false;
-  }}
-  alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
-  src={'/skillicons/' + name + '.svg'}
-  class="border-2 rounded-[28.125%] w-16 2xl:w-[72px] inline-block m-0.5 md:m-1 {'type-' + type}" />
+{#snippet image()}
+  <img
+    onmouseenter={() => {
+      hover = true;
+    }}
+    onmouseleave={() => {
+      hover = false;
+    }}
+    alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
+    src={'/skillicons/' + name + '.svg'}
+    class="border-2 rounded-[28.125%] w-16 2xl:w-[72px] inline-block m-0.5 md:m-1 {'type-' + type}" />
+{/snippet}
+
+{#if href}
+  <a {href} target="_blank" rel="noreferrer noopener">
+    {@render image()}
+  </a>
+{:else}
+  {@render image()}
+{/if}
+
 <!-- Popover -->
 {#if hover}
   <div class="w-fit h-fit relative opacity-0 md:opacity-100">
-    <div1
+    <div
       in:fade={{ duration: 150, delay: 250 }}
       out:fade={{ duration: 100, delay: 0 }}
       class="absolute z-10 inline-block md:w-48 lg:w-64 2xl:w-72 text-sm text-base-content bg-base-100
@@ -41,7 +53,7 @@
       <div class="px-3 py-2 2xl:text-[17px] 2xl:leading-[21px]">
         <p>{description}</p>
       </div>
-    </div1>
+    </div>
   </div>
 {/if}
 

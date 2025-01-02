@@ -3,6 +3,7 @@ export interface item {
   type: string;
   description: string;
   caps: boolean;
+  href?: string;
 }
 
 export const items: item[] = [

@@ -22,7 +22,7 @@
     }}
     alt={caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
     src={'/skillicons/' + name + '.svg'}
-    class="border-2 rounded-[28.125%] w-16 2xl:w-[72px] inline-block m-0.5 md:m-1 {'type-' + type}" />
+    class="border-2 rounded-2xl w-16 2xl:w-[72px] inline-block m-0.5 md:m-1 {'type-' + type}" />
 {/snippet}
 
 {#if href}

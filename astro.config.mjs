@@ -8,5 +8,5 @@ import vercel from '@astrojs/vercel';
 export default defineConfig({
   integrations: [tailwind(), svelte()],
   output: 'server',
-  adapter: vercel()
+  adapter: vercel(),
 });

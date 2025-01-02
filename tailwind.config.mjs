@@ -12,16 +12,16 @@ export default {
           secondary: '#1e6c53',
           primary: '#179b71',
           'base-100': '#1d232a',
-          'base-content': '#f5f5f6'
-        }
-      }
-    ]
+          'base-content': '#f5f5f6',
+        },
+      },
+    ],
   },
   theme: {
     extend: {
       boxShadow: {
-        'legacy-img': '0 0.5rem 0.5rem 0 rgba(38, 37, 37, 0.541)'
-      }
-    }
-  }
+        'legacy-img': '0 0.5rem 0.5rem 0 rgba(38, 37, 37, 0.541)',
+      },
+    },
+  },
 };

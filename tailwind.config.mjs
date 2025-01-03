@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from 'daisyui';
+import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
@@ -21,6 +22,9 @@ export default {
     extend: {
       boxShadow: {
         'legacy-img': '0 0.5rem 0.5rem 0 rgba(38, 37, 37, 0.541)',
+      },
+      fontFamily: {
+        sans: ['Raleway', ...defaultTheme.fontFamily.sans]
       },
     },
   },

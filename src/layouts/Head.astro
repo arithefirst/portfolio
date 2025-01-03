@@ -11,9 +11,13 @@ const { title, description } = Astro.props;
   <meta name="title" content={title} />
   <meta name="description" content={description} />
   <link rel="icon" href="/images/pfp-circle.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <!-- Slot -->
   <slot />
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <Analytics />

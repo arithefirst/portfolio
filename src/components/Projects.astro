@@ -6,6 +6,7 @@ import nowPlayingWidget from '../images/now-playing-widget.webp';
 import pfp from '../../public/images/pfp.png';
 import lockbox from '../images/lockbox.svg';
 import cheesecake from '../images/cheesecake.png';
+import h3 from '../images/h3.png';
 ---
 
 <div class="projects" id="projects">
@@ -13,6 +14,15 @@ import cheesecake from '../images/cheesecake.png';
   <hr class="w-1/2 mx-auto my-3 border-base-content" />
   <div class="grid-cols-4 w-fit mx-auto flex flex-wrap justify-center gap-4">
     <!--  Add <ProjectCard /> Components here  -->
+    <ProjectCard
+      href="https://github.com/hikari3-ch/koshi"
+      name="Koshi (hikari3.ch)"
+      desc="An Imageboard software designed for hikari3.ch"
+      tags={['EJS', 'Express', 'JavaScript', 'MongoDB', 'NodeJS']}
+      client:visible
+    ><Image src={h3} alt="hikari3.ch logo" class="object-cover w-full h-full bg-base-300"/>
+    </ProjectCard>
+
     <ProjectCard
       href="https://github.com/arithefirst/lockbox"
       name="Lockbox"

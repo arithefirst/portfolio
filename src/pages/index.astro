@@ -16,8 +16,10 @@ import Projects from '../components/Projects.astro';
   <body>
     <Navbar />
     <Hero />
-    <Techstack client:visible />
-    <Projects />
-    <div class="pb-8"></div>
+    <main>
+      <Techstack client:visible />
+      <Projects />
+      <div class="pb-8"></div>
+    </main>
   </body>
 </html>

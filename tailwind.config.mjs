@@ -22,6 +22,9 @@ export default {
       boxShadow: {
         'legacy-img': '0 0.5rem 0.5rem 0 rgba(38, 37, 37, 0.541)',
       },
+      transitionTimingFunction: {
+        'out-back': 'cubic-bezier( 0.175, 0.885, 0.32, 1.275 )'
+      }
     },
   },
 };

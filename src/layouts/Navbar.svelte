@@ -3,7 +3,7 @@
 </script>
 
 <nav
-  class="fixed md:mx-auto 2xl:h-20 md:inset-x-0 backdrop-filter backdrop-blur-sm bg-opacity-30 rounded-b-2xl top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar bg-base-200 z-[1000]">
+  class="fixed md:mx-auto 2xl:h-20 md:inset-x-0 backdrop-filter backdrop-blur-sm rounded-b-2xl top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar bg-nav border-2 border-nav-border z-[1000]">
   <div class="navbar-start">
     <a href="/" class="btn btn-ghost text-white text-xl 2xl:text-2xl">arithefirst</a>
   </div>

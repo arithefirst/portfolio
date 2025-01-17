@@ -12,7 +12,7 @@ export default {
           secondary: '#1e6c53',
           primary: '#179b71',
           'base-100': '#1d232a',
-          'base-content': '#f5f5f6', 
+          'base-content': '#f5f5f6',
         },
       },
     ],
@@ -23,13 +23,13 @@ export default {
         'legacy-img': '0 0.5rem 0.5rem 0 rgba(38, 37, 37, 0.541)',
       },
       transitionTimingFunction: {
-        'out-back': 'cubic-bezier( 0.175, 0.885, 0.32, 1.275 )'
+        'out-back': 'cubic-bezier( 0.175, 0.885, 0.32, 1.275 )',
       },
       borderRadius: {
-        'icon': '26.666%'
+        icon: '26.666%',
       },
       colors: {
-        'nav': '#191E242C',
+        nav: '#191E242C',
         'nav-border': '#191E241a',
       },
     },

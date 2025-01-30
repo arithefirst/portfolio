@@ -28,7 +28,7 @@ const { id } = Astro.params;
   <body>
     <Navbar />
     <main class="custom-height bg-red-500 mt-[84px]">
-      <Carousel images={images} className="size-64" client:load />
+      <Carousel images={images} className="w-1/2 aspect-video" client:load />
     </main>
     <style>
       .custom-height {

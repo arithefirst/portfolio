@@ -3,7 +3,9 @@
 </script>
 
 <nav
-  class="fixed md:mx-auto 2xl:h-20 md:inset-x-0 backdrop-filter backdrop-blur-sm rounded-b-2xl top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar bg-nav border-2 border-nav-border z-[1000]"
+  class={`fixed md:mx-auto 2xl:h-20 md:inset-x-0 backdrop-filter backdrop-blur-sm rounded-b-2xl
+  top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar border-2 z-[1000]
+  ${document.documentElement.getAttribute('data-navbar-override') !== null ? 'bg-base-300 border-base-300' : 'bg-nav border-nav-border'}`}
 >
   <div class="navbar-start">
     <a href="/" class="btn btn-ghost text-white text-xl 2xl:text-2xl">arithefirst</a>

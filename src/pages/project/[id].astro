@@ -23,11 +23,11 @@ const images: image[] = [
 const { id } = Astro.params;
 ---
 
-<html lang="en">
+<html lang="en" data-navbar-override>
   <Head title={`arithefirst | ${id}`} description="tbd" />
   <body>
-    <Navbar />
-    <main class="custom-height bg-red-500 mt-[84px] grid w1-full grid-cols-2 p-2">
+    <Navbar client:only />
+    <main class="custom-height mt-[84px] grid w1-full grid-cols-2 pb-3 pt-1 px-3">
       <Carousel images={images} className="size-full" client:load />
     </main>
     <style>

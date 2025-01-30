@@ -14,7 +14,7 @@ import Projects from '../components/Projects.astro';
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </Head>
   <body>
-    <Navbar />
+    <Navbar client:only />
     <Hero />
     <main>
       <Techstack client:visible />

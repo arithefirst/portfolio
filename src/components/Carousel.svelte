@@ -13,15 +13,16 @@
   });
 </script>
 
-<div class={`relative ${className}`}>
+<div class={`relative rounded-md overflow-hidden ${className}`}>
   <div class="carousel size-full">
     {#each images as image, i}
       <div id={`slide${i}`} class="carousel-item relative object-cover size-full">
-        <img src={image.src} alt={image.alt} class="size-full object-cover" />
+        <img src={image.src} alt={image.alt} class="size-full object-contain absolute top-1/2 -translate-y-1/2 z-10" />
+        <img src={image.src} alt={image.alt} class="size-full object-cover absolute top-0 left-0 blur-sm" />
       </div>
     {/each}
   </div>
-  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+  <div class="absolute z-20 left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
     <button
       class={`btn btn-sm ${counter <= 0 ? 'opacity-0 disabled:' : ''}`}
       onclick={() => {

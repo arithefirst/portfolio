@@ -11,12 +11,12 @@ export function getStaticPaths() {
 
 const images: image[] = [
   {
-    src: 'https://arithefirst.com/images/pfp.png',
-    alt: 'pfp',
+    src: '/images/h3.png',
+    alt: 'Hikari3.ch Homepage',
   },
   {
-    src: 'https://arithefirst.com/images/pfp.png',
-    alt: 'pfp',
+    src: '/images/h3.png',
+    alt: 'Hikari3.ch Homepage',
   },
 ];
 
@@ -27,8 +27,8 @@ const { id } = Astro.params;
   <Head title={`arithefirst | ${id}`} description="tbd" />
   <body>
     <Navbar />
-    <main class="custom-height bg-red-500 mt-[84px]">
-      <Carousel images={images} className="w-1/2 aspect-video" client:load />
+    <main class="custom-height bg-red-500 mt-[84px] grid w1-full grid-cols-2 p-2">
+      <Carousel images={images} className="size-full" client:load />
     </main>
     <style>
       .custom-height {

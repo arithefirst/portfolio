@@ -2,10 +2,23 @@
 export const prerender = true;
 import Head from '../../layouts/Head.astro';
 import Navbar from '../../layouts/Navbar.svelte';
+import Carousel from '../../components/Carousel.svelte';
+import type { image } from '../../components/types';
 
 export function getStaticPaths() {
   return [{ params: { id: 'clifford' } }, { params: { id: 'rover' } }, { params: { id: 'spot' } }];
 }
+
+const images: image[] = [
+  {
+    src: 'https://arithefirst.com/images/pfp.png',
+    alt: 'pfp',
+  },
+  {
+    src: 'https://arithefirst.com/images/pfp.png',
+    alt: 'pfp',
+  },
+];
 
 const { id } = Astro.params;
 ---
@@ -14,5 +27,13 @@ const { id } = Astro.params;
   <Head title={`arithefirst | ${id}`} description="tbd" />
   <body>
     <Navbar />
+    <main class="custom-height bg-red-500 mt-[84px]">
+      <Carousel images={images} className="size-64" client:load />
+    </main>
+    <style>
+      .custom-height {
+        height: calc(100vh - 84px);
+      }
+    </style>
   </body>
 </html>

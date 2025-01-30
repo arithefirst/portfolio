@@ -14,9 +14,9 @@
 </script>
 
 <div class={`relative ${className}`}>
-  <div class="carousel">
+  <div class="carousel size-full">
     {#each images as image, i}
-      <div id={`slide${i}`} class="carousel-item relative size-full">
+      <div id={`slide${i}`} class="carousel-item relative object-cover size-full">
         <img src={image.src} alt={image.alt} class="size-full object-cover" />
       </div>
     {/each}

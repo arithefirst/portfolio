@@ -3,3 +3,8 @@ export interface image {
     alt: string;
     class?: string;
 }
+
+export interface badge {
+    content: string;
+    url: string;
+}

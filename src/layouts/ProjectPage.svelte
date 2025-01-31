@@ -14,7 +14,7 @@
   const { title, desc, images, badges, link }: Props = $props();
 </script>
 
-<main class="custom-height mt-[84px] grid w1-full grid-cols-2 pb-3 pt-1 px-3 gap-3">
+<main class="custom-height mt-[84px] grid w1-full md:grid-cols-2 grid-cols-1 pb-3 pt-1 px-3 gap-3">
   <Carousel {images} className="size-full" />
   <div class="rounded-md bg-base-200 p-3">
     <h1 class="text-base-content text-3xl font-bold">{title}</h1>
@@ -24,7 +24,7 @@
     <ProjectBadge {badges} />
 
     <h2 class="text-xl font-bold mt-4 mb-1">Links</h2>
-    <div class="flex gap-1">
+    <div class="flex gap-1 md:flex-row flex-col">
       {#if link.external}
         <a class="btn btn-primary relative flex" href={link.external} target="_blank">
           <img src="/images/external.svg" alt="mingcute:external_link_line" class="h-5" />

@@ -45,8 +45,8 @@ const projects: project[] = [
       },
     ],
     link: {
-      external: 'https://hikari3.ch'
-    }
+      external: 'https://hikari3.ch',
+    },
   },
   {
     title: 'Lockbox',
@@ -88,8 +88,8 @@ const projects: project[] = [
       },
     ],
     link: {
-      source: 'https://github.com/arithefirst/lockbox'
-    }
+      source: 'https://github.com/arithefirst/lockbox',
+    },
   },
   {
     title: 'Now Playing Widget',
@@ -124,8 +124,8 @@ const projects: project[] = [
       },
     ],
     link: {
-      source: 'https://github.com/arithefirst/now-playing-widget'
-    }
+      source: 'https://github.com/arithefirst/now-playing-widget',
+    },
   },
   {
     title: 'Portfolio',
@@ -172,8 +172,8 @@ const projects: project[] = [
     ],
     link: {
       source: 'https://github.com/arithefirst/portfolio',
-      external: 'https://www.arithefirst.com'
-    }
+      external: 'https://www.arithefirst.com',
+    },
   },
   {
     title: 'shibedrill.site',
@@ -225,8 +225,8 @@ const projects: project[] = [
     ],
     link: {
       source: 'https://github.com/arithefirst/shibedrill-homepage',
-      external: 'https://www.shibedrill.site'
-    }
+      external: 'https://www.shibedrill.site',
+    },
   },
 ];
 

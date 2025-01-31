@@ -1,7 +1,7 @@
 # To-Do
 
-- [X] Make projects expandable into their own page
-  - [X] Display Live URL (if appliccable)
-  - [X] Display GitHub URL (if appliccable)
-  - [X] List technologies used
-  - [X] Show images of finished project
+- [x] Make projects expandable into their own page
+  - [x] Display Live URL (if appliccable)
+  - [x] Display GitHub URL (if appliccable)
+  - [x] List technologies used
+  - [x] Show images of finished project

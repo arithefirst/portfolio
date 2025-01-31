@@ -3,18 +3,36 @@ export const prerender = true;
 import Head from '../../layouts/Head.astro';
 import Navbar from '../../layouts/Navbar.svelte';
 import ProjectPage from '../../layouts/ProjectPage.svelte';
+import projects from '../../components/projects';
 
+// All objects in projects.ts become valid paths
 export function getStaticPaths() {
-  return [{ params: { id: 'clifford' } }, { params: { id: 'rover' } }, { params: { id: 'spot' } }];
+  return projects.map((project) => {
+    return {
+      params: {
+        id: project.altname ?? project.title,
+      },
+      props: {
+        // The project gets passed to the page as a prop
+        project,
+      },
+    };
+  });
 }
 
-const { id } = Astro.params;
+const { project } = Astro.props;
 ---
 
 <html lang="en" data-navbar-override>
-  <Head title={`arithefirst | ${id}`} description="tbd" />
+  <Head title={`arithefirst | ${project.title}`} description="tbd" />
   <body>
     <Navbar client:only />
-    <ProjectPage client:load />
+    <ProjectPage
+      client:load
+      title={project.title}
+      desc={project.desc}
+      badges={project.badges}
+      images={project.images}
+    />
   </body>
 </html>

@@ -1,7 +1,7 @@
 <script lang="ts">
   import Carousel from '../components/Carousel.svelte';
   import ProjectBadge from '../components/ProjectBadge.svelte';
-  import type { image, badge, projectlinks } from '../components/types.ts';
+  import type { image, badge, projectlinks } from '../scripts/types.ts';
 
   interface Props {
     title: string;

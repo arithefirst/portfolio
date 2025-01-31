@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { badge } from './types';
+  import type { badge } from '../scripts/types';
 
   interface Props {
     badges: badge[];

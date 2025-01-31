@@ -2,7 +2,7 @@
   // See codepen.io/April-Hall/pen/ZEgEGEg
   // for my original concept for this
   import TechImg from './TechImg.svelte';
-  import { items } from './techItems';
+  import { items } from '../scripts/techItems';
   let mode: number;
   function setOffset(m: number) {
     mode = m;

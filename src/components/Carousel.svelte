@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { image } from './types';
+  import type { image } from '../scripts/types';
   interface Props {
     images: image[];
     className: string;

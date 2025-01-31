@@ -3,10 +3,18 @@ export const prerender = true;
 import Head from '../../layouts/Head.astro';
 import Navbar from '../../layouts/Navbar.svelte';
 import Carousel from '../../components/Carousel.svelte';
-import type { image } from '../../components/types';
+import ProjectBadge from '../../components/ProjectBadge.svelte';
+import type { image, badge } from '../../components/types';
 
 export function getStaticPaths() {
   return [{ params: { id: 'clifford' } }, { params: { id: 'rover' } }, { params: { id: 'spot' } }];
+}
+
+interface Props {
+  images: image[];
+  title: string;
+  desc: string;
+  badges: badge[];
 }
 
 const images: image[] = [
@@ -20,6 +28,33 @@ const images: image[] = [
   },
 ];
 
+const badges: badge[] = [
+  {
+    content: 'ejs',
+    url: 'https://ejs.co/',
+  },
+  {
+    content: 'ejs',
+    url: 'https://ejs.co/',
+  },
+  {
+    content: 'ejs',
+    url: 'https://ejs.co/',
+  },
+  {
+    content: 'ejs',
+    url: 'https://ejs.co/',
+  },
+  {
+    content: 'ejs',
+    url: 'https://ejs.co/',
+  },
+  {
+    content: 'javarscript',
+    url: 'https://ejs.co/',
+  },
+];
+
 const { id } = Astro.params;
 ---
 
@@ -27,8 +62,15 @@ const { id } = Astro.params;
   <Head title={`arithefirst | ${id}`} description="tbd" />
   <body>
     <Navbar client:only />
-    <main class="custom-height mt-[84px] grid w1-full grid-cols-2 pb-3 pt-1 px-3">
+    <main class="custom-height mt-[84px] grid w1-full grid-cols-2 pb-3 pt-1 px-3 gap-3">
       <Carousel images={images} className="size-full" client:load />
+      <div class="rounded-md bg-base-200 p-3">
+        <h1 class="text-base-content text-3xl font-bold">Kōshi</h1>
+        <h3 class="text-base-content text-lg mb-4">An imageboard software designed for hikari3.ch</h3>
+
+        <h2 class="text-xl font-bold">Technologies</h2>
+        <ProjectBadge badges={badges} />
+      </div>
     </main>
     <style>
       .custom-height {

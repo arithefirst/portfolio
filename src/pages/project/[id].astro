@@ -10,7 +10,7 @@ export function getStaticPaths() {
   return projects.map((project) => {
     return {
       params: {
-        id: project.altname ?? project.title,
+        id: project.altname ?? project.title.toLowerCase(),
       },
       props: {
         // The project gets passed to the page as a prop

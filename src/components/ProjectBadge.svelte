@@ -9,7 +9,9 @@
 </script>
 
 <div class="flex gap-1 w-1/4 text-center mt-1">
-  {#each badges as tag, i}
-    <a class="rounded-lg px-2 border-base-content border basis-1/4" href={tag.url}>{tag.content}</a>
+  {#each badges as tag}
+    <a class="rounded-lg px-2 border-base-content border basis-1/4" target="_blank" rel="noreferrer" href={tag.url}
+      >{tag.content}</a
+    >
   {/each}
 </div>

@@ -9,10 +9,16 @@ export interface badge {
   url: string;
 }
 
+export interface projectlinks {
+  source?: string;
+  external?: string;
+}
+
 export interface project {
   title: string;
   altname?: string;
   desc: string;
   images: image[];
   badges: badge[];
+  link: projectlinks;
 }

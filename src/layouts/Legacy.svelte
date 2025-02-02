@@ -1,5 +1,83 @@
 <script lang="ts">
   import type { legacyButton } from '../scripts/types';
+
+  const links: legacyButton[] = [
+    {
+      name: 'Amazon Wishlist',
+      url: 'https://www.amazon.com/hz/wishlist/ls/1F2RJS322A2NR?sort=price-asc',
+      icon: '#icon-baf4300f501aae4c1930e4344f77b381',
+    },
+    {
+      name: 'Bluesky',
+      url: 'https://bsky.app/profile/arithefirst.com',
+      icon: '#icon-0c4db87eff374f0f1ef47f8f043f0132',
+    },
+    {
+      name: 'Discogs',
+      url: 'https://www.discogs.com/user/arithefirst/collection?header=1',
+      icon: '#icon-2324cca7d3647d5d437815fe39f4cb67',
+    },
+    {
+      name: 'Discord',
+      url: 'https://discord.com/users/613358761901424652',
+      icon: '#icon-discordapp',
+    },
+    {
+      name: 'Email',
+      url: 'mailto:ari@arithefirst.com',
+      icon: '#icon-c3c8e1063e3b7f84f6b54712741de139',
+    },
+    {
+      name: 'Github',
+      url: 'https://github.com/arithefirst',
+      icon: '#icon-8c4b37645de3c276d895d87df51ba614',
+    },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/_arithefirst_/',
+      icon: '#icon-85976685de3e4af37529a1ce5d57d2a7',
+    },
+    {
+      name: 'Musescore',
+      url: 'https://musescore.com/user/63121765',
+      icon: '#icon-a63c85b2b6ee333b6d6753e57c8dfe0b',
+    },
+    {
+      name: 'Pintrest',
+      url: 'https://www.pinterest.com/arithefirst_/',
+      icon: '#icon-950f35a71f420383dc2b54f8bf482185',
+    },
+    {
+      name: 'Pronouns.Page',
+      url: 'https://en.pronouns.page/@arithefirst',
+      icon: '#icon-7b8b203a175397e05376f74d544a45d4',
+    },
+    {
+      name: 'Reddit',
+      url: 'https://www.reddit.com/user/PancakeAri',
+      icon: '#icon-c83ee4da7ecbbbd33cd0166b89ce370f',
+    },
+    {
+      name: 'Spotify',
+      url: 'https://stats.fm/arithefirst',
+      icon: '#icon-6f1173b99f06aa4855b8fd26db52c969',
+    },
+    {
+      name: 'Steam',
+      url: 'https://steamcommunity.com/id/arithefirst/',
+      icon: '#icon-56a1e10494600ea42075d3aa573d5839',
+    },
+    {
+      name: 'TikTok',
+      url: 'https://www.tiktok.com/@arithefirst_',
+      icon: '#icon-694b338299bf630d8d2ec9bd42d31dbe',
+    },
+    {
+      name: 'YouTube',
+      url: 'https://youtube.com/@arithefirst_',
+      icon: '#icon-a63c85b2b6ee333b6d6753e57c8dfe0a',
+    },
+  ];
 </script>
 
 {#snippet button(props: legacyButton)}
@@ -110,81 +188,13 @@
                 since 2009
               </p>
               <ul id="buttons02" class="buttons">
-                {@render button({
-                  name: 'Amazon Wishlist',
-                  url: 'https://www.amazon.com/hz/wishlist/ls/1F2RJS322A2NR?sort=price-asc',
-                  icon: '#icon-baf4300f501aae4c1930e4344f77b381',
-                })}
-                {@render button({
-                  name: 'Bluesky',
-                  url: 'https://bsky.app/profile/arithefirst.com',
-                  icon: '#icon-0c4db87eff374f0f1ef47f8f043f0132',
-                })}
-                {@render button({
-                  name: 'Discogs',
-                  url: 'https://www.discogs.com/user/arithefirst/collection?header=1',
-                  icon: '#icon-2324cca7d3647d5d437815fe39f4cb67',
-                })}
-                {@render button({
-                  name: 'Discord',
-                  url: 'https://discord.com/users/613358761901424652',
-                  icon: '#icon-discordapp',
-                })}
-                {@render button({
-                  name: 'Email',
-                  url: 'mailto:ari@arithefirst.com',
-                  icon: '#icon-c3c8e1063e3b7f84f6b54712741de139',
-                })}
-                {@render button({
-                  name: 'Github',
-                  url: 'https://github.com/arithefirst',
-                  icon: '#icon-8c4b37645de3c276d895d87df51ba614',
-                })}
-                {@render button({
-                  name: 'Instagram',
-                  url: 'https://www.instagram.com/_arithefirst_/',
-                  icon: '#icon-85976685de3e4af37529a1ce5d57d2a7',
-                })}
-                {@render button({
-                  name: 'Musescore',
-                  url: 'https://musescore.com/user/63121765',
-                  icon: '#icon-a63c85b2b6ee333b6d6753e57c8dfe0b',
-                })}
-                {@render button({
-                  name: 'Pintrest',
-                  url: 'https://www.pinterest.com/arithefirst_/',
-                  icon: '#icon-950f35a71f420383dc2b54f8bf482185',
-                })}
-                {@render button({
-                  name: 'Pronouns.Page',
-                  url: 'https://en.pronouns.page/@arithefirst',
-                  icon: '#icon-7b8b203a175397e05376f74d544a45d4',
-                })}
-                {@render button({
-                  name: 'Reddit',
-                  url: 'https://www.reddit.com/user/PancakeAri',
-                  icon: '#icon-c83ee4da7ecbbbd33cd0166b89ce370f',
-                })}
-                {@render button({
-                  name: 'Spotify',
-                  url: 'https://stats.fm/arithefirst',
-                  icon: '#icon-6f1173b99f06aa4855b8fd26db52c969',
-                })}
-                {@render button({
-                  name: 'Steam',
-                  url: 'https://steamcommunity.com/id/arithefirst/',
-                  icon: '#icon-56a1e10494600ea42075d3aa573d5839',
-                })}
-                {@render button({
-                  name: 'TikTok',
-                  url: 'https://www.tiktok.com/@arithefirst_',
-                  icon: '#icon-694b338299bf630d8d2ec9bd42d31dbe',
-                })}
-                {@render button({
-                  name: 'YouTube',
-                  url: 'https://youtube.com/@arithefirst_',
-                  icon: '#icon-a63c85b2b6ee333b6d6753e57c8dfe0a',
-                })}
+                {#each links as link}
+                  {@render button({
+                    name: link.name,
+                    url: link.url,
+                    icon: link.icon,
+                  })}
+                {/each}
               </ul>
             </div>
           </div>

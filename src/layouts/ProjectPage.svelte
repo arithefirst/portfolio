@@ -14,7 +14,7 @@
   const { title, desc, images, badges, link }: Props = $props();
 </script>
 
-<main class="custom-height mt-[84px] grid w1-full md:grid-cols-2 grid-cols-1 pb-3 pt-1 px-3 gap-3">
+<main class="custom-height mt-[84px] grid w1-full md:grid-cols-2 grid-cols-1 p-3 gap-3">
   <Carousel {images} className="size-full" />
   <div class="rounded-md bg-base-200 p-3">
     <h1 class="text-base-content text-3xl font-bold">{title}</h1>

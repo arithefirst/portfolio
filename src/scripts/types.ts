@@ -22,3 +22,11 @@ export interface project {
   badges: badge[];
   link: projectlinks;
 }
+
+export interface item {
+  name: string;
+  type: string;
+  description: string;
+  caps: boolean;
+  href?: string;
+}

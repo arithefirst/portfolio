@@ -1,10 +1,4 @@
-export interface item {
-  name: string;
-  type: string;
-  description: string;
-  caps: boolean;
-  href?: string;
-}
+import type {item} from './types'
 
 export const items: item[] = [
   {

@@ -1,5 +1,12 @@
 <script lang="ts">
+  import type { Snippet } from 'svelte';
   import type { legacyButton } from '../scripts/types';
+
+  interface Props {
+    children: Snippet;
+  }
+
+  const { children }: Props = $props();
 
   const links: legacyButton[] = [
     {
@@ -182,6 +189,9 @@
         <div id="container02" class="container default">
           <div class="wrapper">
             <div class="inner">
+              <div id="image01">
+                <span class="frame">{@render children()}</span>
+              </div>
               <h1 id="text01">April Hall</h1>
               <p id="text03">
                 Putting the fun in dys<a style="text-decoration:none" href="https://arithefirst.com/bee">fun</a>ctional

@@ -24,7 +24,7 @@
     src={`/skillicons/${name}.svg`}
     class="border-2 rounded-icon w-16 2xl:w-[72px] inline-block m-0.5 md:m-1 {'type-' + type}"
   />
-  <span class="sr-only">{name.toLocaleLowerCase()}</span>
+  <span class="sr-only">{`Click to visit ${name.toLocaleLowerCase()}'s website'`}</span>
 {/snippet}
 
 {#if href}

@@ -1,4 +1,4 @@
-import type {item} from './types'
+import type { item } from './types';
 
 export const items: item[] = [
   {

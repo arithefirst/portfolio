@@ -24,13 +24,13 @@
   </div>
   <div class="absolute z-20 left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
     <button
-      class={`btn btn-sm ${counter <= 0 ? 'opacity-0 disabled:' : ''}`}
+      class={`btn btn-sm aspect-square ${counter <= 0 ? 'opacity-0 disabled:' : ''}`}
       onclick={() => {
         if (counter >= 0) counter -= 1;
       }}>❮</button
     >
     <button
-      class={`btn btn-sm ${counter === images.length - 1 ? 'opacity-0 disabled:' : ''}`}
+      class={`btn btn-sm aspect-square ${counter === images.length - 1 ? 'opacity-0 disabled:' : ''}`}
       onclick={() => {
         if (counter < images.length - 1) counter += 1;
       }}>❯</button

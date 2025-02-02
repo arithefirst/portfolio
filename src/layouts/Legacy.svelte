@@ -456,10 +456,6 @@
     transition: none;
   }
 
-  #image01 .frame img {
-    transition: none;
-  }
-
   #text01 {
     color: #242f40;
     font-family: 'Roboto', sans-serif;

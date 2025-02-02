@@ -4,6 +4,12 @@ export interface image {
   class?: string;
 }
 
+export interface legacyButton {
+  icon: string;
+  url: string;
+  name: string;
+}
+
 export interface badge {
   content: string;
   url: string;

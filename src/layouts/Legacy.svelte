@@ -1,3 +1,18 @@
+<script lang="ts">
+  import type { legacyButton } from '../scripts/types';
+</script>
+
+{#snippet button(props: legacyButton)}
+  <li>
+    <a href={props.url} target="_blank" class="button">
+      <svg>
+        <use xlink:href={props.icon}></use>
+      </svg>
+      <span class="label">{props.name}</span>
+    </a>
+  </li>
+{/snippet}
+
 <main>
   <div id="background"></div>
   <!-- SVGs -->
@@ -89,143 +104,87 @@
         <div id="container02" class="container default">
           <div class="wrapper">
             <div class="inner">
-              <div id="image01">
-                <span class="frame"><slot></slot></span>
-              </div>
               <h1 id="text01">April Hall</h1>
               <p id="text03">
                 Putting the fun in dys<a style="text-decoration:none" href="https://arithefirst.com/bee">fun</a>ctional
                 since 2009
               </p>
               <ul id="buttons02" class="buttons">
-                <li>
-                  <a
-                    href="https://www.amazon.com/hz/wishlist/ls/1F2RJS322A2NR?sort=price-asc"
-                    target="_blank"
-                    class="button n01"
-                  >
-                    <svg>
-                      <use xlink:href="#icon-baf4300f501aae4c1930e4344f77b381"></use>
-                    </svg>
-                    <span class="label">Amazon Wishlist</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://bsky.app/profile/arithefirst.com" target="_blank" class="button n12">
-                    <svg>
-                      <use xlink:href="#icon-0c4db87eff374f0f1ef47f8f043f0132"></use>
-                    </svg>
-                    <span class="label">Bluesky</span>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.discogs.com/user/arithefirst/collection?header=1"
-                    target="_blank"
-                    class="button n02"
-                  >
-                    <svg>
-                      <use xlink:href="#icon-2324cca7d3647d5d437815fe39f4cb67"></use>
-                    </svg>
-                    <span class="label">Discogs</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://discord.com/users/613358761901424652" target="_blank" class="button n16">
-                    <svg>
-                      <use xlink:href="#icon-discordapp"></use>
-                    </svg>
-                    <span class="label">Discord</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:ari@arithefirst.com" target="_blank" class="button n03">
-                    <svg>
-                      <use xlink:href="#icon-c3c8e1063e3b7f84f6b54712741de139"></use>
-                    </svg>
-                    <span class="label">Email</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/arithefirst" target="_blank" class="button n04">
-                    <svg>
-                      <use xlink:href="#icon-8c4b37645de3c276d895d87df51ba614"></use>
-                    </svg>
-                    <span class="label">GitHub</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/_arithefirst_/" target="_blank" class="button n05">
-                    <svg>
-                      <use xlink:href="#icon-85976685de3e4af37529a1ce5d57d2a7"></use>
-                    </svg>
-                    <span class="label">Instagram</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://musescore.com/user/63121765" target="_blank" class="button n15">
-                    <svg>
-                      <use xlink:href="#icon-a63c85b2b6ee333b6d6753e57c8dfe0b"></use>
-                    </svg>
-                    <span class="label">Musescore</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.pinterest.com/arithefirst_/" target="_blank" class="button n06">
-                    <svg>
-                      <use xlink:href="#icon-950f35a71f420383dc2b54f8bf482185"></use>
-                    </svg>
-                    <span class="label">Pintrest</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://en.pronouns.page/@arithefirst" target="_blank" class="button n07">
-                    <svg>
-                      <use xlink:href="#icon-7b8b203a175397e05376f74d544a45d4"></use>
-                    </svg>
-                    <span class="label">Pronouns.Page</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.reddit.com/user/PancakeAri" target="_blank" class="button n08">
-                    <svg>
-                      <use xlink:href="#icon-c83ee4da7ecbbbd33cd0166b89ce370f"></use>
-                    </svg>
-                    <span class="label">Reddit</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://stats.fm/arithefirst" target="_blank" class="button n09">
-                    <svg>
-                      <use xlink:href="#icon-6f1173b99f06aa4855b8fd26db52c969"></use>
-                    </svg>
-                    <span class="label">Spotify</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://steamcommunity.com/id/arithefirst/" target="_blank" class="button n10">
-                    <svg>
-                      <use xlink:href="#icon-56a1e10494600ea42075d3aa573d5839"></use>
-                    </svg>
-                    <span class="label">Steam</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.tiktok.com/@arithefirst_" target="_blank" class="button n11">
-                    <svg>
-                      <use xlink:href="#icon-694b338299bf630d8d2ec9bd42d31dbe"></use>
-                    </svg>
-                    <span class="label">TikTok</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="https://youtube.com/@arithefirst_" target="_blank" class="button n13">
-                    <svg>
-                      <use xlink:href="#icon-a63c85b2b6ee333b6d6753e57c8dfe0a"></use>
-                    </svg>
-                    <span class="label">Youtube</span>
-                  </a>
-                </li>
+                {@render button({
+                  name: 'Amazon Wishlist',
+                  url: 'https://www.amazon.com/hz/wishlist/ls/1F2RJS322A2NR?sort=price-asc',
+                  icon: '#icon-baf4300f501aae4c1930e4344f77b381',
+                })}
+                {@render button({
+                  name: 'Bluesky',
+                  url: 'https://bsky.app/profile/arithefirst.com',
+                  icon: '#icon-0c4db87eff374f0f1ef47f8f043f0132',
+                })}
+                {@render button({
+                  name: 'Discogs',
+                  url: 'https://www.discogs.com/user/arithefirst/collection?header=1',
+                  icon: '#icon-2324cca7d3647d5d437815fe39f4cb67',
+                })}
+                {@render button({
+                  name: 'Discord',
+                  url: 'https://discord.com/users/613358761901424652',
+                  icon: '#icon-discordapp',
+                })}
+                {@render button({
+                  name: 'Email',
+                  url: 'mailto:ari@arithefirst.com',
+                  icon: '#icon-c3c8e1063e3b7f84f6b54712741de139',
+                })}
+                {@render button({
+                  name: 'Github',
+                  url: 'https://github.com/arithefirst',
+                  icon: '#icon-8c4b37645de3c276d895d87df51ba614',
+                })}
+                {@render button({
+                  name: 'Instagram',
+                  url: 'https://www.instagram.com/_arithefirst_/',
+                  icon: '#icon-85976685de3e4af37529a1ce5d57d2a7',
+                })}
+                {@render button({
+                  name: 'Musescore',
+                  url: 'https://musescore.com/user/63121765',
+                  icon: '#icon-a63c85b2b6ee333b6d6753e57c8dfe0b',
+                })}
+                {@render button({
+                  name: 'Pintrest',
+                  url: 'https://www.pinterest.com/arithefirst_/',
+                  icon: '#icon-950f35a71f420383dc2b54f8bf482185',
+                })}
+                {@render button({
+                  name: 'Pronouns.Page',
+                  url: 'https://en.pronouns.page/@arithefirst',
+                  icon: '#icon-7b8b203a175397e05376f74d544a45d4',
+                })}
+                {@render button({
+                  name: 'Reddit',
+                  url: 'https://www.reddit.com/user/PancakeAri',
+                  icon: '#icon-c83ee4da7ecbbbd33cd0166b89ce370f',
+                })}
+                {@render button({
+                  name: 'Spotify',
+                  url: 'https://stats.fm/arithefirst',
+                  icon: '#icon-6f1173b99f06aa4855b8fd26db52c969',
+                })}
+                {@render button({
+                  name: 'Steam',
+                  url: 'https://steamcommunity.com/id/arithefirst/',
+                  icon: '#icon-56a1e10494600ea42075d3aa573d5839',
+                })}
+                {@render button({
+                  name: 'TikTok',
+                  url: 'https://www.tiktok.com/@arithefirst_',
+                  icon: '#icon-694b338299bf630d8d2ec9bd42d31dbe',
+                })}
+                {@render button({
+                  name: 'YouTube',
+                  url: 'https://youtube.com/@arithefirst_',
+                  icon: '#icon-a63c85b2b6ee333b6d6753e57c8dfe0a',
+                })}
               </ul>
             </div>
           </div>

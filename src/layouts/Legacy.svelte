@@ -1,6 +1,7 @@
 <script lang="ts">
   import type { Snippet } from 'svelte';
   import type { legacyButton } from '../scripts/types';
+  let banner: HTMLElement;
 
   interface Props {
     children: Snippet;
@@ -97,6 +98,17 @@
     </a>
   </li>
 {/snippet}
+
+<div
+  class="fixed top-0 left-0 w-full bg-warning z-50 px-4 py-2 text-warning-content flex align-middle"
+  bind:this={banner}
+>
+  This is an old site, and is no longer maintained.
+  <a class="pl-1 link" href="https://www.arithefirst.com">View new site?</a>
+  <button class="h-full ml-auto leading-none my-auto" onclick={() => banner.remove()} aria-label="Hide">
+    <img src="/images/close.svg" class="size-5 my-auto" alt="close div icon" />
+  </button>
+</div>
 
 <main>
   <div id="background"></div>

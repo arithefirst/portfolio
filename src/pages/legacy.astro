@@ -12,7 +12,7 @@ import Head from '../layouts/Head.astro';
     <meta name="robots" content="noindex" />
   </Head>
   <body>
-    <LegacySite>
+    <LegacySite client:load>
       <Image
         class="mx-auto rounded-[10px] shadow-legacy-img w-1/2 aspect-square"
         src={pfpPng}

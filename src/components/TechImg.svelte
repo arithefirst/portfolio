@@ -22,7 +22,7 @@
     }}
     alt={`The logo for ${caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)} (${type})`}
     src={`/skillicons/${name}.svg`}
-    class="border-2 rounded-icon w-16 2xl:w-[72px] inline-block m-0.5 md:m-1 {'type-' + type}"
+    class="m-0.5 inline-block w-16 rounded-icon border-2 md:m-1 2xl:w-[72px] {'type-' + type}"
   />
   <span class="sr-only">{`Click to visit ${name.toLocaleLowerCase()}'s website'`}</span>
 {/snippet}
@@ -37,20 +37,20 @@
 
 <!-- Popover -->
 {#if hover}
-  <div class="w-fit h-fit relative opacity-0 md:opacity-100">
+  <div class="relative h-fit w-fit opacity-0 md:opacity-100">
     <div
       in:fade={{ duration: 150, delay: 250 }}
       out:fade={{ duration: 100, delay: 0 }}
-      class="absolute z-10 inline-block md:w-48 lg:w-64 2xl:w-72 text-sm text-base-content bg-base-100
-            border border-base-300 rounded-lg shadow-sm"
+      class="absolute z-10 inline-block rounded-lg border border-base-300 bg-base-100 text-sm text-base-content
+            shadow-sm md:w-48 lg:w-64 2xl:w-72"
     >
-      <div class="px-3 py-2 bg-base-200 border-b border-base-300 rounded-t-lg">
+      <div class="rounded-t-lg border-b border-base-300 bg-base-200 px-3 py-2">
         <img
           alt={`The logo for ${caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)} (${type})`}
           src={`/skillicons/${name}.svg`}
-          class="h-8 w-8 mx-auto"
+          class="mx-auto h-8 w-8"
         />
-        <h3 class="font-semibold text-center text-white 2xl:text-xl">
+        <h3 class="text-center font-semibold text-white 2xl:text-xl">
           {caps ? name.toUpperCase() : name.charAt(0).toUpperCase() + name.slice(1)}
         </h3>
       </div>

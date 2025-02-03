@@ -3,15 +3,15 @@
 </script>
 
 <nav
-  class={`fixed md:mx-auto 2xl:h-20 md:inset-x-0 backdrop-filter backdrop-blur-sm rounded-b-2xl
-  top-0 md:top-2 md:rounded-2xl md:w-11/12 navbar border-2 z-[1000]
-  ${document.documentElement.getAttribute('data-navbar-override') !== null ? 'bg-base-200 border-base-200' : 'bg-nav border-nav-border'}`}
+  class={`navbar fixed top-0 z-[1000] rounded-b-2xl border-2 backdrop-blur-sm
+  backdrop-filter md:inset-x-0 md:top-2 md:mx-auto md:w-11/12 md:rounded-2xl 2xl:h-20
+  ${document.documentElement.getAttribute('data-navbar-override') !== null ? 'border-base-200 bg-base-200' : 'border-nav-border bg-nav'}`}
 >
   <div class="navbar-start">
-    <a href="/" class="btn btn-ghost text-white text-xl 2xl:text-2xl">arithefirst</a>
+    <a href="/" class="btn btn-ghost text-xl text-white 2xl:text-2xl">arithefirst</a>
   </div>
   <div class="navbar-center hidden md:flex">
-    <ul class="menu menu-horizontal text-white px-1">
+    <ul class="menu menu-horizontal px-1 text-white">
       <li><a class="2xl:text-lg" href="/#hero">Home</a></li>
       <li><a class="2xl:text-lg" href="/contact">Contact</a></li>
       <li><a class="2xl:text-lg" href="/#projects">Projects</a></li>
@@ -19,7 +19,7 @@
   </div>
   <div class="navbar-end">
     <details bind:open class="dropdown dropdown-end">
-      <summary class="btn btn-square btn-sm bg-base-300 w-10 h-10 m-1 swap swap-rotate relative md:hidden dropdown-end">
+      <summary class="btn btn-square dropdown-end swap swap-rotate btn-sm relative m-1 h-10 w-10 bg-base-300 md:hidden">
         <input bind:checked={open} type="checkbox" aria-label="Open nav menu" />
         <svg xmlns="http://www.w3.org/2000/svg" width="80%" height="80%" class="swap-off m-auto" viewBox="0 0 24 24">
           <g
@@ -43,7 +43,7 @@
           </g>
         </svg>
       </summary>
-      <ul class="md:hidden menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+      <ul class="menu dropdown-content z-[1] w-52 rounded-box bg-base-100 p-2 shadow md:hidden">
         <li><a href="/#hero">Home</a></li>
         <li><a href="/contact">Contact</a></li>
         <li><a href="/#projects">Projects</a></li>

@@ -24,23 +24,23 @@ import YouTubeIcon from '../images/icons/youtube.svg';
 
 <html class="bg-accent" lang="en">
   <Head title="arithefirst | Contact" description="Everywhere you can find April Hall" />
-  <body class="md:overflow-hidden overflow-y-scroll overflow-x-hidden">
+  <body class="overflow-x-hidden overflow-y-scroll md:overflow-hidden">
     <Navbar client:only />
     <div
-      class="w-screen mt-[76px] z-10 md:absolute md:mt-0 md:top-[84px] md:left-1/2 md:-translate-x-1/2 custom-height"
+      class="custom-height z-10 mt-[76px] w-screen md:absolute md:left-1/2 md:top-[84px] md:mt-0 md:-translate-x-1/2"
     >
-      <div class="md:flex md:justify-center h-fit md:items-center md:w-full md:h-full">
+      <div class="h-fit md:flex md:h-full md:w-full md:items-center md:justify-center">
         <div>
           <Image
             alt="cat from 2023 steam summer sale"
-            class="relative w-[15w] mx-auto aspect-square rounded-3xl"
+            class="relative mx-auto aspect-square w-[15w] rounded-3xl"
             src={Pfp}
           />
-          <h1 class="text-center relative font-bold md:text-3xl text-xl my-2 text-white">
+          <h1 class="relative my-2 text-center text-xl font-bold text-white md:text-3xl">
             @arithefirst (almost) everywhere
           </h1>
           <div
-            class="relative mb-5 h-fit md:w-fit w-10/12 grid md:grid-cols-6 grid-cols-1 mx-auto justify-items-center gap-2"
+            class="relative mx-auto mb-5 grid h-fit w-10/12 grid-cols-1 justify-items-center gap-2 md:w-fit md:grid-cols-6"
           >
             <ContactElement
               className="md:col-span-2"

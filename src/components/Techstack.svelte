@@ -10,13 +10,13 @@
 </script>
 
 <section id="techstack">
-  <h1 class="text-3xl font-bold text-center mt-5">Technologies</h1>
-  <hr class="w-1/2 mx-auto my-3 border-base-content" />
+  <h1 class="mt-5 text-center text-3xl font-bold">Technologies</h1>
+  <hr class="mx-auto my-3 w-1/2 border-base-content" />
 
   <div>
-    <div class="w-fit mx-auto my-2">
+    <div class="mx-auto my-2 w-fit">
       <button
-        class="btn no-animation md:btn-sm btn-xs btn-primary mx-1"
+        class="btn btn-primary no-animation btn-xs mx-1 md:btn-sm"
         onmouseenter={() => {
           setOffset(1);
         }}
@@ -25,7 +25,7 @@
         }}>Tools</button
       >
       <button
-        class="btn no-animation md:btn-sm btn-xs btn-primary mx-1"
+        class="btn btn-primary no-animation btn-xs mx-1 md:btn-sm"
         onmouseenter={() => {
           setOffset(2);
         }}
@@ -34,7 +34,7 @@
         }}>Frameworks & Libs</button
       >
       <button
-        class="btn no-animation md:btn-sm btn-xs btn-primary mx-1"
+        class="btn btn-primary no-animation btn-xs mx-1 md:btn-sm"
         onmouseenter={() => {
           setOffset(3);
         }}
@@ -43,7 +43,7 @@
         }}>Languages</button
       >
       <button
-        class="btn no-animation md:btn-sm btn-xs btn-primary mx-1"
+        class="btn btn-primary no-animation btn-xs mx-1 md:btn-sm"
         onmouseenter={() => {
           setOffset(4);
         }}
@@ -53,7 +53,7 @@
       >
     </div>
 
-    <div class="w-11/12 md:w-1/2 h-fit mx-auto relative img-container flex flex-wrap justify-center">
+    <div class="img-container relative mx-auto flex h-fit w-11/12 flex-wrap justify-center md:w-1/2">
       {#each items as item}
         <TechImg type={item.type} name={item.name} description={item.description} caps={item.caps} href={item.href} />
       {/each}

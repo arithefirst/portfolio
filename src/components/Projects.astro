@@ -10,9 +10,9 @@ import h3 from '../images/h3.png';
 ---
 
 <section class="projects" id="projects">
-  <h1 class="text-3xl font-bold text-center md:mt-5 mt-5">Projects</h1>
-  <hr class="w-1/2 mx-auto my-3 border-base-content" />
-  <div class="grid-cols-4 w-fit mx-auto flex flex-wrap justify-center gap-4">
+  <h1 class="mt-5 text-center text-3xl font-bold md:mt-5">Projects</h1>
+  <hr class="mx-auto my-3 w-1/2 border-base-content" />
+  <div class="mx-auto flex w-fit grid-cols-4 flex-wrap justify-center gap-4">
     <!--  Add <ProjectCard /> Components here  -->
     <ProjectCard
       href="/project/koshi#slide0"
@@ -20,7 +20,7 @@ import h3 from '../images/h3.png';
       desc="An Imageboard software designed for hikari3.ch"
       tags={['EJS', 'Express', 'JavaScript', 'MongoDB', 'NodeJS']}
       client:visible
-      ><Image src={h3} alt="hikari3.ch logo" class="object-cover w-full h-full bg-base-300" />
+      ><Image src={h3} alt="hikari3.ch logo" class="h-full w-full bg-base-300 object-cover" />
     </ProjectCard>
 
     <ProjectCard
@@ -29,7 +29,7 @@ import h3 from '../images/h3.png';
       desc="A password protected dropbox where users given a password can upload a file "
       tags={['DaisyUI', 'Docker', 'Svelte', 'SvelteKit', 'Tailwind', 'Typescript']}
       client:visible
-      ><Image src={lockbox} alt="lockbox logo" class="object-cover w-full h-full bg-base-300" /></ProjectCard
+      ><Image src={lockbox} alt="lockbox logo" class="h-full w-full bg-base-300 object-cover" /></ProjectCard
     >
     <ProjectCard
       href="/project/now-playing-widget#slide0"
@@ -40,7 +40,7 @@ import h3 from '../images/h3.png';
       ><Image
         src={nowPlayingWidget}
         alt="now playing widget preview"
-        class="object-cover w-full h-full bg-base-300"
+        class="h-full w-full bg-base-300 object-cover"
       /></ProjectCard
     >
     <ProjectCard
@@ -52,7 +52,7 @@ import h3 from '../images/h3.png';
       ><Image
         src={pfp}
         alt="cat from the 2023 steam summer sale"
-        class="object-cover w-full h-full bg-base-300"
+        class="h-full w-full bg-base-300 object-cover"
       /></ProjectCard
     >
     <ProjectCard
@@ -64,7 +64,7 @@ import h3 from '../images/h3.png';
       ><Image
         src={cheesecake}
         alt="Cheesecake, the harbinger of end times"
-        class="object-cover w-full h-full bg-base-300"
+        class="h-full w-full bg-base-300 object-cover"
       /></ProjectCard
     >
   </div>

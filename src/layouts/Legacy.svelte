@@ -100,13 +100,13 @@
 {/snippet}
 
 <div
-  class="fixed top-0 left-0 w-full bg-warning z-50 px-4 py-2 text-warning-content flex align-middle"
+  class="fixed left-0 top-0 z-50 flex w-full bg-warning px-4 py-2 align-middle text-warning-content"
   bind:this={banner}
 >
   This is an old site, and is no longer maintained.
-  <a class="pl-1 link" href="https://www.arithefirst.com">View new site?</a>
-  <button class="h-full ml-auto leading-none my-auto" onclick={() => banner.remove()} aria-label="Hide">
-    <img src="/images/close.svg" class="size-5 my-auto" alt="close div icon" />
+  <a class="link pl-1" href="https://www.arithefirst.com">View new site?</a>
+  <button class="my-auto ml-auto h-full leading-none" onclick={() => banner.remove()} aria-label="Hide">
+    <img src="/images/close.svg" class="my-auto size-5" alt="close div icon" />
   </button>
 </div>
 
@@ -198,7 +198,7 @@
   <div id="wrapper">
     <div id="main">
       <div class="inner">
-        <div id="container02" class="container default">
+        <div id="container02" class="default container">
           <div class="wrapper">
             <div class="inner">
               <div id="image01">

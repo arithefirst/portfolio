@@ -14,8 +14,8 @@
 
 <a
   {href}
-  class="card bg-base-200 cursor-pointer relative grid md:w-64 w-10/12
-  2xl:w-72 md:my-3 my-0.5 md:hover:scale-[1.025] md:ease-out-back md:transition-all"
+  class="card relative my-0.5 grid w-10/12 cursor-pointer bg-base-200
+  md:my-3 md:w-64 md:transition-all md:ease-out-back md:hover:scale-[1.025] 2xl:w-72"
 >
   <div class="card">
     <figure>
@@ -26,7 +26,7 @@
       <p class="mb-1">{desc}</p>
       <div class="card-actions justify-end">
         {#each tags as tag}
-          <div class="rounded-lg px-2 border-base-content border">{tag}</div>
+          <div class="rounded-lg border border-base-content px-2">{tag}</div>
         {/each}
       </div>
     </div>

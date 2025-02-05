@@ -23,16 +23,16 @@
   </div>
   <div class="absolute left-5 right-5 top-1/2 z-20 flex -translate-y-1/2 transform justify-between">
     <button
-      class={`btn btn-sm aspect-square ${counter <= 0 ? 'disabled cursor-default opacity-0' : ''}`}
+      class={`btn btn-square btn-sm ${counter <= 0 ? 'disabled cursor-default opacity-0' : ''}`}
       onclick={() => {
         if (counter > 0) counter -= 1;
-      }}>❮</button
+      }}><img src="/images/arrow.svg" alt="arrow_fill" /></button
     >
     <button
-      class={`btn btn-sm aspect-square ${counter === images.length - 1 ? 'disabled cursor-default opacity-0' : ''}`}
+      class={`btn btn-square btn-sm ${counter === images.length - 1 ? 'disabled cursor-default opacity-0' : ''}`}
       onclick={() => {
         if (counter < images.length - 1) counter += 1;
-      }}>❯</button
+      }}><img src="/images/arrow.svg" alt="arrow_fill" class="rotate-180" /></button
     >
   </div>
 </div>

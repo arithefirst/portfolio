@@ -7,18 +7,21 @@
 
   const { images, className }: Props = $props();
   let counter: number = $state(0);
+  let itemWidth: number = $state(0);
+  let margin: number = $state(0);
+
   $effect(() => {
-    // Update the image in the gallery on counter change
-    window.location.hash = `slide${counter}`;
+    margin = (itemWidth + 8) * counter;
   });
 </script>
 
 <div class={`relative overflow-hidden rounded-md ${className}`}>
-  <div class="carousel size-full">
-    {#each images as image, i}
-      <div id={`slide${i}`} class="carousel-item relative size-full object-cover">
+  <div class="absolute top-0 flex size-full gap-2 transition-all duration-300" style={`right: ${margin}px`}>
+    {#each images as image}
+      <div class="carousel-item relative size-full object-cover" bind:clientWidth={itemWidth}>
         <img src={image.src} alt={image.alt} class="absolute top-1/2 z-10 size-full -translate-y-1/2 object-contain" />
         <img src={image.src} alt={image.alt} class="absolute left-0 top-0 size-full object-cover blur-sm" />
+        <div class="w-[200%] bg-base-100"></div>
       </div>
     {/each}
   </div>
@@ -26,7 +29,7 @@
     <button
       class={`btn btn-sm aspect-square ${counter <= 0 ? 'disabled: opacity-0' : ''}`}
       onclick={() => {
-        if (counter >= 0) counter -= 1;
+        if (counter > 0) counter -= 1;
       }}>❮</button
     >
     <button

@@ -8,11 +8,7 @@
   const { images, className }: Props = $props();
   let counter: number = $state(0);
   let itemWidth: number = $state(0);
-  let margin: number = $state(0);
-
-  $effect(() => {
-    margin = (itemWidth + 8) * counter;
-  });
+  let margin: number = $derived((itemWidth + 8) * counter);
 </script>
 
 <div class={`relative overflow-hidden rounded-md ${className}`}>
